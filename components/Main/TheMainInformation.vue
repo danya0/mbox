@@ -75,5 +75,9 @@ export default {
       margin-right: 7px;
     }
   }
+
+  @include grid-mobile {
+    margin: 0 auto;
+  }
 }
 </style>

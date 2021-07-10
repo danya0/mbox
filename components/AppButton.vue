@@ -31,6 +31,9 @@ export default {
   transition: transform .3s;
 
   margin-right: 30px;
+  @include grid-tablet {
+    margin-right: 20px;
+  }
 
   &.white {
     color: #323232;
@@ -40,6 +43,12 @@ export default {
 
   &:hover {
     transform: scale(1.05);
+  }
+
+  @include grid-mobile {
+    width: 100%;
+    margin-bottom: 15px;
+    margin-right: 0;
   }
 }
 </style>

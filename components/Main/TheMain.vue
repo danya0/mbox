@@ -52,6 +52,7 @@ export default {
 
 .custom-button-block {
   display: flex;
+  justify-content: center;
   align-items: center;
   svg {
     margin-right: 15px;
@@ -60,11 +61,19 @@ export default {
 
 .main {
   &-section {
-    background: url('~assets/img/main-bg.png') center / cover no-repeat;
+    background-image: url('~assets/img/main-bg.png');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    @include grid-mobile {
+      background-position: right -310px center;
+    }
   }
 
   padding-top: 285px;
   padding-left: 205px;
+  padding-bottom: 170px;
 
   &-block {
     &:not(&:last-child) {
@@ -86,8 +95,27 @@ export default {
     color: #C2C2C2;
   }
 
-  &-buttons {
+  @include grid-laptop {
+    padding-left: 60px;
+    padding-bottom: 140px;
+  }
 
+  @include grid-tablet {
+    padding-top: 180px;
+    &-block {
+    }
+    &__title {
+      font-size: 60px;
+      line-height: 65px;
+    }
+    &__description {
+      font-size: 16px;
+    }
+  }
+  @include grid-mobile {
+    padding-bottom: 150px;
+    padding-left: 0;
+    text-align: center;
   }
 }
 </style>
