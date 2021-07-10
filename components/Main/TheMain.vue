@@ -63,7 +63,7 @@ export default {
     background: url('~assets/img/main-bg.png') center / cover no-repeat;
   }
 
-  padding-top: 216px;
+  padding-top: 285px;
   padding-left: 205px;
 
   &-block {
