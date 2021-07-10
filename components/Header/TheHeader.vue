@@ -39,6 +39,11 @@ export default {
   display: flex;
   align-items: center;
 
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1400px;
+
   &-block {
     display: flex;
     align-items: center;
@@ -47,6 +52,19 @@ export default {
     &:not(:first-child) {
       justify-content: center;
     }
+  }
+
+  @include grid-laptop-l {
+    width: 1000px;
+  }
+  @include grid-laptop {
+    width: 760px;
+  }
+  @include grid-tablet {
+    width: 415px;
+  }
+  @include grid-mobile {
+    width: 310px;
   }
 }
 
