@@ -1,0 +1,42 @@
+// grid
+@mixin grid-laptop-l() {
+  @media (max-width: 1440px) {
+    @content;
+  }
+}
+
+@mixin grid-laptop() {
+  @media (max-width: 1030px) {
+    @content;
+  }
+}
+
+@mixin grid-tablet() {
+  @media (max-width: 780px) {
+    @content;
+  }
+}
+
+@mixin grid-mobile() {
+  @media (max-width: 430px) {
+    @content;
+  }
+}
+
+.tablet {
+  &-hidden {
+    @include grid-tablet {
+      display: none !important;
+    }
+  }
+  &-show-bl {
+    @include grid-tablet {
+      display: block !important;
+    }
+  }
+  &-show-fx {
+    @include grid-tablet {
+      display: flex !important;
+    }
+  }
+}
