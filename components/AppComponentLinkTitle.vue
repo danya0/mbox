@@ -80,5 +80,9 @@ export default {
     width: 8px;
     background: $gradient;
   }
+
+  @include grid-mobile {
+    line-height: 30px;
+  }
 }
 </style>

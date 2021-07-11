@@ -60,6 +60,7 @@ export default {
 }
 
 .main {
+  margin-bottom: 70px;
   &-section {
     background-image: url('~assets/img/main-bg.png');
     background-size: cover;
@@ -102,8 +103,6 @@ export default {
 
   @include grid-tablet {
     padding-top: 180px;
-    &-block {
-    }
     &__title {
       font-size: 60px;
       line-height: 65px;
@@ -113,8 +112,9 @@ export default {
     }
   }
   @include grid-mobile {
-    padding-bottom: 150px;
+    padding-bottom: 100px;
     padding-left: 0;
+    margin-bottom: 10px;
     text-align: center;
   }
 }

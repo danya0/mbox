@@ -1,24 +1,20 @@
-.VueCarousel-navigation-next {
-  transform: translateY(-50%) translateX(20%) !important;
-}
-
-.VueCarousel-navigation-prev {
-  transform: translateY(-50%) translateX(-20%) !important;
-}
-
-.VueCarousel-pagination {
-  display: none !important;
-}
-
-.VueCarousel-navigation--disabled {
+.slick-disabled {
   display: none;
 }
 
-.VueCarousel-wrapper {
-  width: 95% !important;
+.slick-list {
+  width: 95%;
+  margin: 0 auto !important;
 }
 
-.VueCarousel {
-  align-items: center;
+.slick-next {
+  right: 0;
+}
+
+.slick-prev {
+  left: 0;
+}
+.slick-next, .slick-prev {
+  z-index: 1;
 }
 

@@ -37,6 +37,7 @@ export default {
   border-radius: 20px;
   height: 310px;
   width: 206px;
+  margin: 0 auto;
 
   transition: box-shadow .3s;
 

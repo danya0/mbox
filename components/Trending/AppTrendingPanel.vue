@@ -4,19 +4,18 @@
       {{linkText}}
     </app-component-link-title>
     <div class="trending-panel-carousel">
-      <client-only>
-        <carousel
-          :per-page-custom="[[150, 1], [570, 2], [750, 3], [950, 4], [1174, 5], [1400, 6]]"
-          navigation-enabled
-          :navigation-next-label="nextLabel"
-          :navigation-prev-label="prevLabel"
-          :pagination-enabled="false"
-        >
-          <slide v-for="(obj, index) of objectsArray" :key="index">
-            <app-trending-element :title="obj.title" :image="obj.image"/>
-          </slide>
-        </carousel>
-      </client-only>
+      <vue-slick-carousel v-bind="carouselSettings">
+        <!--slides-->
+        <app-trending-element v-for="(obj, idx) of objectsArray" :key="idx" :title="obj.title" :image="obj.image"/>
+
+        <!--arrows-->
+        <template #nextArrow>
+          <img :src="nextSvg" alt="next slide" class="custom-arrow">
+        </template>
+        <template #prevArrow>
+          <img :src="prevSvg" alt="prev slide" class="custom-arrow">
+        </template>
+      </vue-slick-carousel>
     </div>
   </div>
 </template>
@@ -26,9 +25,12 @@ import nextSvg from '~/assets/img/next-arrow.svg'
 import prevSvg from '~/assets/img/prev-arrow.svg'
 import AppTrendingElement from "~/components/Trending/AppTrendingElement";
 import AppComponentLinkTitle from "~/components/AppComponentLinkTitle";
+import VueSlickCarousel  from 'vue-slick-carousel'
+import 'vue-slick-carousel/dist/vue-slick-carousel.css'
+import 'vue-slick-carousel/dist/vue-slick-carousel-theme.css'
 
 export default {
-  components: {AppComponentLinkTitle, AppTrendingElement},
+  components: {AppComponentLinkTitle, AppTrendingElement, VueSlickCarousel},
   emits: ['link-click'],
   props: {
     objectsArray: {
@@ -40,8 +42,46 @@ export default {
   },
   data() {
     return {
-      nextLabel: `<img src='${nextSvg}' />`,
-      prevLabel: `<img src='${prevSvg}' />`
+      nextSvg,
+      prevSvg,
+      carouselSettings: {
+        arrows: true,
+        slidesToShow: 6,
+        infinite: false,
+        slidesToScroll: 1,
+        responsive: [
+          {
+            "breakpoint": 1400,
+            "settings": {
+              "slidesToShow": 5,
+            }
+          },
+          {
+            "breakpoint": 1174,
+            "settings": {
+              "slidesToShow": 4,
+            }
+          },
+          {
+            "breakpoint": 950,
+            "settings": {
+              "slidesToShow": 3,
+            }
+          },
+          {
+            "breakpoint": 730,
+            "settings": {
+              "slidesToShow": 2,
+            }
+          },
+          {
+            "breakpoint": 515,
+            "settings": {
+              "slidesToShow": 1,
+            }
+          }
+        ]
+      }
     }
   }
 }
@@ -49,7 +89,10 @@ export default {
 
 <style lang="scss" scoped>
 .trending-panel {
-  margin-top: 60px;
+  margin-bottom: 60px;
 }
 
+.custom-arrow {
+  height: 35px;
+}
 </style>

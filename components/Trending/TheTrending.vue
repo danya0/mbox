@@ -13,6 +13,7 @@
       />
       <app-button class="see-more-button" v-if="!more" @click="more = true">See more</app-button>
       <app-trending-panel
+        class="m0"
         v-else
         linkText="Trending Series"
         :objects-array="library.series"
@@ -40,11 +41,15 @@ export default {
 
 <style lang="scss" scoped>
 .see-more-button {
-  margin-top: 35px;
+  margin-top: -20px;
+}
+.m0 {
+  margin: 0;
 }
 
 .trending {
   padding-top: 70px;
+  padding-bottom: 80px;
   position: relative;
 
   // top line
@@ -57,7 +62,5 @@ export default {
     height: 2px;
     background: #2F2E2E;
   }
-
-
 }
 </style>
