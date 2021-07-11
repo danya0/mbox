@@ -1,0 +1,20 @@
+.slick-disabled {
+  display: none;
+}
+
+.slick-list {
+  width: 95%;
+  margin: 0 auto !important;
+}
+
+.slick-next {
+  right: 0;
+}
+
+.slick-prev {
+  left: 0;
+}
+.slick-next, .slick-prev {
+  z-index: 1;
+}
+

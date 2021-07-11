@@ -1,11 +1,12 @@
 <template>
-  <button class="button" :class="{white}">
+  <button class="button" :class="{white}" @click="$emit('click')">
     <slot />
   </button>
 </template>
 
 <script>
 export default {
+  emits: ['click'],
   props: {
     white: {
       type: Boolean,

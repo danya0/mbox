@@ -2,7 +2,7 @@
   <nav class="nav" :class="{'for-burger-menu': burgerMenu}">
     <NuxtLink class="nav__link" to="/">Home</NuxtLink>
     <NuxtLink class="nav__link" to="/tv">TV Shows</NuxtLink>
-    <NuxtLink class="nav__link" to="/movie">Movies</NuxtLink>
+    <NuxtLink class="nav__link" to="/movies">Movies</NuxtLink>
     <NuxtLink class="nav__link" to="/series">Series</NuxtLink>
   </nav>
 </template>
