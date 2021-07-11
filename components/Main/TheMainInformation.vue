@@ -58,7 +58,7 @@ export default {
     align-items: center;
 
     &-main {
-      height: 21px;
+      height: 22px;
       width: 56px;
       border-radius: 50px;
       background: #000;

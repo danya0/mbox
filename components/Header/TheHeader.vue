@@ -35,6 +35,7 @@ export default {
 
 <style lang="scss">
 .header {
+  z-index: 5;
   padding-top: 15px;
   display: flex;
   align-items: center;
