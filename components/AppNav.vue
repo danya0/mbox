@@ -30,7 +30,7 @@ export default {
     opacity: 0.5;
     font-weight: 800;
     position: relative;
-    transition: opacity .3s;
+    transition: opacity .3s, color $header-change-style-transition;
 
     &:hover {
       opacity: .75;

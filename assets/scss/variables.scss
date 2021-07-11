@@ -1,8 +1,11 @@
 // colors
 $bg: #000000;
 $gradient: linear-gradient(316.53deg, #26FFF2 13.2%, #326CFF 71.54%);
+$reverse-gradient: linear-gradient(316.53deg, #326CFF 13.2%, #26FFF2 71.54%);
 $text-color: #ffffff;
 $unselected-links: rgba(#ffffff, .6);
 
 $container-width: 1500px;
 $burger-menu-height: 250px;
+
+$header-change-style-transition: .5s;
