@@ -1,8 +1,8 @@
 <template>
   <div>
     <the-burger-menu :active="burgerMenu" />
-    <div class="main" :class="{'with-burger-menu': burgerMenu}">
-      <the-header />
+    <the-header :with-burger="burgerMenu" />
+    <div class="content" :class="{'with-burger-menu': burgerMenu}">
       <Nuxt/>
     </div>
   </div>
@@ -14,6 +14,18 @@ import TheBurgerMenu from "~/components/Burger/TheBurgerMenu";
 import {mapState} from "vuex"
 
 export default {
+  mounted() {
+    if (process.browser){
+      window.addEventListener('resize', this.listenResize)
+    }
+  },
+  methods: {
+    listenResize() {
+      if (window.innerWidth > 780) {
+        this.$store.dispatch('closeBurgerMenu')
+      }
+    },
+  },
   computed: {
     ...mapState({burgerMenu: 'burgerMenu'})
   },
@@ -54,8 +66,8 @@ a {
 }
 
 @include grid-tablet {
-  .main {
-    transition: transform .3s;
+  .content {
+    transition: transform $burger-show-transition;
     &.with-burger-menu {
       transform: translateY($burger-menu-height);
     }

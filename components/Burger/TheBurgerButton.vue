@@ -23,7 +23,7 @@ export default {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  transition: all .3s;
+  transition: transform .3s, background-color $header-change-style-transition;
 
   &.active {
     .burger__line {
@@ -47,7 +47,7 @@ export default {
     background: $bg;
     border-radius: 5px;
     margin: 2px 0;
-    transition: transform .3s;
+    transition: transform .3s, background-color $header-change-style-transition;
   }
 }
 </style>
