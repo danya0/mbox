@@ -17,8 +17,21 @@ export const actions = {
 
     if (state.burgerMenu) {
       document.body.style.overflow = 'hidden'
+      document.body.style.padding = 'padding: 0 calc(20px - (100vw - 100%)) 0 0;'
+      // document.body.style.marginRight = 'calc(-1 * (100vw - 100%))'
     } else if (!state.burgerMenu) {
       document.body.style.overflow = ''
+      document.body.style.marginRight = ''
+      document.body.style.padding = ''
+
+    }
+  },
+  closeBurgerMenu({state, commit}) {
+    if (state.burgerMenu) {
+      commit('closeBurgerMenu')
+      document.body.style.overflow = ''
+      document.body.style.marginRight = ''
+      document.body.style.padding = ''
     }
   }
 }

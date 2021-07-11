@@ -33,7 +33,7 @@ export default {
       transform: translateY(0);
     }
     & .placeholder {
-      opacity: .25;
+      opacity: .5;
       z-index: 1;
     }
   }
@@ -42,7 +42,7 @@ export default {
     z-index: 2;
     height: $burger-menu-height;
     padding: 20px 0;
-    width: 100%;
+    width: 101%;
     background: #ffffff;
     display: none;
     align-items: center;

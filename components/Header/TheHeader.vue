@@ -1,5 +1,5 @@
 <template>
-  <div class="header-wrap" :class="{'when-scroll': whenScroll}">
+  <div class="header-wrap" :class="{'when-scroll': whenScroll, 'with-burger': withBurger}">
     <div class="container">
       <header class="header">
         <div class="header-block">
@@ -23,8 +23,14 @@ import TheBurgerButton from "~/components/Burger/TheBurgerButton";
 import AppNav from "~/components/AppNav";
 import AppHeaderButtons from "~/components/Header/AppHeaderButtons";
 import {mapState, mapMutations, mapActions} from "vuex";
+import TheBurgerMenu from "~/components/Burger/TheBurgerMenu";
 
 export default {
+  props: {
+    withBurger: {
+      type: Boolean
+    }
+  },
   data() {
     return {
       whenScroll: false,
@@ -44,7 +50,7 @@ export default {
   computed: {
     ...mapState(['burgerMenu'])
   },
-  components: {AppHeaderButtons, AppNav, TheBurgerButton, AppLogo}
+  components: {TheBurgerMenu, AppHeaderButtons, AppNav, TheBurgerButton, AppLogo}
 }
 </script>
 
@@ -54,47 +60,53 @@ export default {
   transition: $header-change-style-transition;
 }
 
+.header-wrap {
+  display: flex;
+  justify-content: center;
+  z-index: 5;
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 101%;
+  padding: 15px 0 15px 0;
+  transition: background-color $header-change-style-transition, transform $burger-show-transition;
+
+  &.when-scroll {
+    padding: 10px 0 10px 0;
+    background: #fff;
+
+    .nav__link, .logo__text {
+      color: #000;
+    }
+
+    .logo__letter .black-box {
+      background: #fff;
+      color: black;
+    }
+
+    #search path{
+      stroke: #000;
+    }
+
+    .burger {
+      background: #000;
+      &__line {
+        background: #ffffff;
+      }
+    }
+  }
+
+  &.with-burger {
+    @include grid-tablet {
+      transform: translateY(calc(#{$burger-menu-height} - 5px)) translateX(-50%);
+    }
+  }
+}
+
 .header {
   display: flex;
   align-items: center;
   width: 1400px;
-
-  &-wrap {
-    display: flex;
-    justify-content: center;
-    z-index: 5;
-    position: fixed;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 100%;
-    padding: 15px 0 15px 0;
-    transition: $header-change-style-transition;
-
-    &.when-scroll {
-      padding: 10px 0 10px 0;
-      background: #fff;
-
-      .nav__link, .logo__text {
-        color: #000;
-      }
-
-      .logo__letter .black-box {
-        background: #fff;
-        color: black;
-      }
-
-      #search path{
-        stroke: #000;
-      }
-
-      .burger {
-        background: #000;
-        &__line {
-          background: #ffffff;
-        }
-      }
-    }
-  }
 
   &-block {
     display: flex;
