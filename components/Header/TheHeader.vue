@@ -35,8 +35,9 @@ export default {
       whenScroll: false,
     }
   },
-  created() {
+  mounted() {
     if (process.browser){
+      this.checkScrollY();
       window.addEventListener('scroll', this.checkScrollY)
     }
   },

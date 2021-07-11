@@ -14,7 +14,7 @@ import TheBurgerMenu from "~/components/Burger/TheBurgerMenu";
 import {mapState} from "vuex"
 
 export default {
-  created() {
+  mounted() {
     if (process.browser){
       window.addEventListener('resize', this.listenResize)
     }
