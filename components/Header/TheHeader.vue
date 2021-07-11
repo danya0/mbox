@@ -22,8 +22,7 @@ import AppLogo from "~/components/AppLogo";
 import TheBurgerButton from "~/components/Burger/TheBurgerButton";
 import AppNav from "~/components/AppNav";
 import AppHeaderButtons from "~/components/Header/AppHeaderButtons";
-import {mapState, mapMutations, mapActions} from "vuex";
-import TheBurgerMenu from "~/components/Burger/TheBurgerMenu";
+import {mapState, mapActions} from "vuex";
 
 export default {
   props: {
@@ -50,7 +49,7 @@ export default {
   computed: {
     ...mapState(['burgerMenu'])
   },
-  components: {TheBurgerMenu, AppHeaderButtons, AppNav, TheBurgerButton, AppLogo}
+  components: {AppHeaderButtons, AppNav, TheBurgerButton, AppLogo}
 }
 </script>
 
