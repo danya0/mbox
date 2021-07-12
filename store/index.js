@@ -17,7 +17,6 @@ export const actions = {
 
     if (state.burgerMenu) {
       document.body.style.overflow = 'hidden'
-      document.body.style.paddingRight = 'calc(20px - (100vw - 100%))'
     } else if (!state.burgerMenu) {
       document.body.style.cssText = ''
     }

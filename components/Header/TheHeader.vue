@@ -24,7 +24,7 @@ import AppNav from "~/components/AppNav";
 import AppHeaderButtons from "~/components/Header/AppHeaderButtons";
 import {mapState, mapActions} from "vuex";
 
-export default {
+export default { // todo: need to fix header width. with percent and max-width
   props: {
     withBurger: {
       type: Boolean
@@ -106,7 +106,7 @@ export default {
 .header {
   display: flex;
   align-items: center;
-  width: 1400px;
+  padding: 0 15px;
 
   &-block {
     display: flex;
@@ -118,21 +118,21 @@ export default {
     }
   }
 
-  @include grid-laptop-l {
-    width: 1000px;
-  }
-  @include grid-laptop {
-    width: 760px;
-  }
-  @include grid-tablet {
-    width: 415px;
-  }
+  //@include grid-laptop-l {
+  //  width: 1000px;
+  //}
+  //@include grid-laptop {
+  //  width: 760px;
+  //}
+  //@include grid-tablet {
+  //  width: 415px;
+  //}
   @include grid-mobile {
-    width: 310px;
+    padding: 0;
   }
-  @media (max-width: 320px) {
-    width: 280px;
-  }
+  //@media (max-width: 320px) {
+  //  width: 280px;
+  //}
 }
 
 

@@ -35,9 +35,10 @@ export default {
 
 <style lang="scss">
 @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;800&display=swap');
 
 html {
-  font-family: 'Mulish', sans-serif;
+  font-family: 'Inter', sans-serif;
 }
 
 * {
@@ -48,6 +49,7 @@ html {
   margin: 0 auto;
   padding: 0 20px;
   max-width: $container-width;
+  width: 100%;
 }
 
 body, h1, h2, h3 {
