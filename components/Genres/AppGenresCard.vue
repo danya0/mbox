@@ -2,7 +2,7 @@
   <div class="card" :style="{background: bg}" @click="$emit('card-click')">
     <div class="card-block">
       <div class="card__ico" :style="{backgroundImage: urlIco}">
-        <img :src="ico" alt="">
+        <img :src="ico" :alt="{title}">
       </div>
       <div class="card__title">{{ title }}</div>
     </div>
@@ -61,7 +61,8 @@ export default {
   &__title {
     font-weight: bold;
     font-size: 28px;
-    line-height: 20px;
+    text-align: center;
+    line-height: 24px;
 
     @include grid-mobile {
       font-size: 18px;
