@@ -1,7 +1,7 @@
 <template>
   <div class="card" :style="{background: bg}" @click="$emit('card-click')">
     <div class="card-block">
-      <div class="card__ico" :style="{backgroundImage: urlIco}">
+      <div class="card__ico">
         <img :src="ico" :alt="{title}">
       </div>
       <div class="card__title">{{ title }}</div>
@@ -13,11 +13,6 @@
 export default {
   emits: ['card-click'],
   props: ['bg', 'ico', 'title'],
-  data() {
-    return {
-      urlIco: `url("${this.ico}")`
-    }
-  },
 }
 </script>
 
