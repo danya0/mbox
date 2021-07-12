@@ -33,7 +33,6 @@ import DocumentarySvg from '~/assets/img/genres/documentary.svg'
 export default {
   data() {
     return {
-      RomanceSvg, DramaSvg, HistoricalSvg, ActionSvg, ScifiSvg, HorrorSvg, ComedySvg, DocumentarySvg,
       cards: [
         {
           title: 'Romance',
