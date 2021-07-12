@@ -35,10 +35,9 @@ export default {
 
 <style lang="scss">
 @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;800&display=swap');
 
 html {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Mulish', sans-serif;
 }
 
 * {
