@@ -17,9 +17,6 @@ import AppCarousel from "~/components/AppCarousel";
 import AppActor from "~/components/Actors/AppActor";
 import {mapState} from "vuex";
 export default {
-  mounted() {
-    console.log('library.actors', this.library.actors)
-  },
   components: {AppActor, AppComponentLinkTitle, AppCarousel},
   computed: {...mapState('library', ['library'])}
 }

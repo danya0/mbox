@@ -46,9 +46,12 @@ html {
 
 .container {
   margin: 0 auto;
-  padding: 0 30px;
+  padding: 0 20px;
   max-width: $container-width;
   width: 100%;
+  @include grid-mobile {
+    padding: 0 30px;
+  }
 }
 
 body, h1, h2, h3 {
