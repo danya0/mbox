@@ -1,5 +1,5 @@
 <template>
-  <nav class="nav" :class="{'for-burger-menu': burgerMenu}">
+  <nav class="nav" :class="{'for-burger-menu': burgerMenu}" @click="closeMenu">
     <NuxtLink class="nav__link" to="/">Home</NuxtLink>
     <NuxtLink class="nav__link" to="/tv">TV Shows</NuxtLink>
     <NuxtLink class="nav__link" to="/movies">Movies</NuxtLink>
@@ -9,6 +9,13 @@
 
 <script>
 export default {
+  methods: {
+    closeMenu(e) {
+      if (e.target.classList.contains('nav__link')) {
+        this.$store.dispatch('closeBurgerMenu')
+      }
+    }
+  },
   props: {
     burgerMenu: {
       type: Boolean,

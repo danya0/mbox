@@ -1,0 +1,28 @@
+.slick-disabled {
+  display: none !important;
+}
+
+.slick-list {
+  @include grid-mobile {
+    width: 85% !important;
+    margin: 0 auto !important;
+  }
+}
+
+.slick-next {
+  @include grid-mobile {
+    right: 0 !important;
+  }
+  right: -20px !important;
+}
+
+.slick-prev {
+  @include grid-mobile {
+    left: 0 !important;
+  }
+  left: -20px !important;
+}
+
+.slick-next, .slick-prev {
+  z-index: 1 !important;
+}

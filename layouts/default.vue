@@ -46,7 +46,7 @@ html {
 
 .container {
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 30px;
   max-width: $container-width;
   width: 100%;
 }
