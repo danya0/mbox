@@ -106,7 +106,6 @@ export default { // todo: need to fix header width. with percent and max-width
 .header {
   display: flex;
   align-items: center;
-  padding: 0 15px;
 
   &-block {
     display: flex;
@@ -118,21 +117,9 @@ export default { // todo: need to fix header width. with percent and max-width
     }
   }
 
-  //@include grid-laptop-l {
-  //  width: 1000px;
-  //}
-  //@include grid-laptop {
-  //  width: 760px;
-  //}
-  //@include grid-tablet {
-  //  width: 415px;
-  //}
   @include grid-mobile {
     padding: 0;
   }
-  //@media (max-width: 320px) {
-  //  width: 280px;
-  //}
 }
 
 

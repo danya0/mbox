@@ -39,7 +39,7 @@ export default {
   }
 
   &:hover:before {
-    opacity: .15;
+    opacity: .3;
   }
 
   &-block {

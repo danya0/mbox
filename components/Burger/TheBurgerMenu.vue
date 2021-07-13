@@ -19,7 +19,7 @@ export default {
   methods: {
     closeAfterLinkClick(e) {
       !e.target.classList.contains('nav')
-        ? this.$store.commit('closeBurgerMenu')
+        ? this.$store.dispatch('closeBurgerMenu')
         : null
     }
   }

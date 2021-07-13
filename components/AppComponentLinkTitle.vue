@@ -53,7 +53,6 @@ export default {
 <style lang="scss" scoped>
 .component-link {
   cursor: pointer;
-  margin-left: 19px;
   font-weight: bold;
   font-size: 28px;
   line-height: 20px;
@@ -81,7 +80,7 @@ export default {
     background: $gradient;
   }
 
-  @include grid-mobile {
+  @include grid-laptop {
     line-height: 30px;
   }
 }

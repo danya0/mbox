@@ -40,7 +40,7 @@ export default {
     scss: [
       '~/assets/scss/variables.scss',
       '~/assets/scss/grid.scss',
-      '~/assets/scss/vue-carousel.scss',
+      '~/assets/scss/carousel.scss',
     ]
   },
 
