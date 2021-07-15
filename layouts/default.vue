@@ -54,7 +54,11 @@ html {
   }
 }
 
-body, h1, h2, h3 {
+.with-header {
+  padding-top: 90px;
+}
+
+body, h1, h2, h3, p {
   margin: 0;
   padding: 0;
 }

@@ -5,7 +5,7 @@
     </app-component-link-title>
     <div class="trending-panel-carousel">
       <app-carousel>
-        <app-trending-element v-for="(obj, idx) of objectsArray" :key="idx" :title="obj.title" :image="obj.image"/>
+        <app-card v-for="(obj, idx) of objectsArray" :key="idx" :title="obj.title" :image="obj.image" no-title/>
       </app-carousel>
     </div>
   </div>
@@ -15,9 +15,10 @@
 import AppTrendingElement from "~/components/Trending/AppTrendingElement";
 import AppComponentLinkTitle from "~/components/AppComponentLinkTitle";
 import AppCarousel from "~/components/AppCarousel";
+import AppCard from "~/components/AppCard";
 
 export default {
-  components: {AppComponentLinkTitle, AppTrendingElement, AppCarousel},
+  components: {AppCard, AppComponentLinkTitle, AppTrendingElement, AppCarousel},
   emits: ['link-click'],
   props: {
     objectsArray: {

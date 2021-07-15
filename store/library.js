@@ -2,30 +2,37 @@ export const state = () => ({
   library: {
     tvShows: [
       {
+        id: 1,
         title: 'Comedy Club',
         image: 'https://www.vokrug.tv/pic/product/1/8/5/d/185d16ed74d47af01146e61ac94b838f.jpg'
       },
       {
+        id: 2,
         title: 'Голос. Дети',
         image: 'https://static.1tv.ru/uploads/project/social_photo_image/2020/08/12/2162/_original/2162_662c59f6d1.jpg'
       },
       {
+        id: 3,
         title: 'Comedy Club',
         image: 'https://www.vokrug.tv/pic/product/1/8/5/d/185d16ed74d47af01146e61ac94b838f.jpg'
       },
       {
+        id: 4,
         title: 'Голос. Дети',
         image: 'https://static.1tv.ru/uploads/project/social_photo_image/2020/08/12/2162/_original/2162_662c59f6d1.jpg'
       },
       {
+        id: 5,
         title: 'Comedy Club',
         image: 'https://www.vokrug.tv/pic/product/1/8/5/d/185d16ed74d47af01146e61ac94b838f.jpg'
       },
       {
+        id: 6,
         title: 'Голос. Дети',
         image: 'https://static.1tv.ru/uploads/project/social_photo_image/2020/08/12/2162/_original/2162_662c59f6d1.jpg'
       },
       {
+        id: 7,
         title: 'Comedy Club',
         image: 'https://www.vokrug.tv/pic/product/1/8/5/d/185d16ed74d47af01146e61ac94b838f.jpg'
       },
@@ -122,6 +129,18 @@ export const state = () => ({
     ]
   }
 })
+
+export const getters = {
+  getTvShows(state) {
+    return state.library.tvShows
+  },
+  getMovies(state) {
+    return state.library.movies
+  },
+  getSeries(state) {
+    return state.library.series
+  }
+}
 
 export const mutations = {
 }
