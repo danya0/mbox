@@ -114,30 +114,37 @@ export const state = () => ({
   },
   actors: [
     {
+      id: 1,
       name: 'Том Харди',
       image: 'https://upload.wikimedia.org/wikipedia/commons/4/43/Tom_Hardy_by_Gage_Skidmore.jpg'
     },
     {
+      id: 2,
       name: 'Том Круз',
       image: 'https://www.film.ru/sites/default/files/styles/thumb_260x320/public/people/1457226-827313.jpg'
     },
     {
+      id: 3,
       name: 'Том Харди',
       image: 'https://upload.wikimedia.org/wikipedia/commons/4/43/Tom_Hardy_by_Gage_Skidmore.jpg'
     },
     {
+      id: 4,
       name: 'Том Круз',
       image: 'https://www.film.ru/sites/default/files/styles/thumb_260x320/public/people/1457226-827313.jpg'
     },
     {
+      id: 5,
       name: 'Том Харди',
       image: 'https://upload.wikimedia.org/wikipedia/commons/4/43/Tom_Hardy_by_Gage_Skidmore.jpg'
     },
     {
+      id: 6,
       name: 'Том Круз',
       image: 'https://www.film.ru/sites/default/files/styles/thumb_260x320/public/people/1457226-827313.jpg'
     },
     {
+      id: 7,
       name: 'Том Харди',
       image: 'https://upload.wikimedia.org/wikipedia/commons/4/43/Tom_Hardy_by_Gage_Skidmore.jpg'
     },

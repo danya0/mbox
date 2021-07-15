@@ -5,7 +5,7 @@
         Popular Actors & Directors
       </app-component-link-title>
       <app-carousel>
-        <app-actor v-for="act of actors" :key="act.name" :name="act.name" :link="act.name" :image="act.image"/>
+        <app-actor v-for="act of actors" :key="act.name" :name="act.name" :link="act.id" :image="act.image"/>
       </app-carousel>
     </div>
   </div>

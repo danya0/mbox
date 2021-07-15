@@ -5,7 +5,14 @@
     </app-component-link-title>
     <div class="trending-panel-carousel">
       <app-carousel>
-        <app-card v-for="(obj, idx) of objectsArray" :key="idx" :title="obj.title" :image="obj.image" no-title/>
+        <app-card
+          v-for="obj of objectsArray"
+          @click-card="goToPage(obj.id)"
+          :key="obj.id"
+          :title="obj.title"
+          :image="obj.image"
+          no-title
+        />
       </app-carousel>
     </div>
   </div>
@@ -26,6 +33,14 @@ export default {
     },
     linkText: {
       type: String,
+    },
+    place: {
+      type: String
+    }
+  },
+  methods: {
+    goToPage(id) {
+      this.$router.push(`${this.place}/${id}`)
     }
   }
 }
