@@ -2,8 +2,8 @@
   <div class="card-place">
     <app-card
       v-if="cardArray.length"
-      v-for="el of cardArray"
-      @click-card="goToRoute(el.id)"
+      v-for="(el, idx) of cardArray"
+      @click-card="goToRoute(el.id, idx)"
       :key="el.title+Math.random()"
       :image="el.image"
       :title="el.title"
@@ -16,8 +16,8 @@
 import AppCard from "~/components/AppCard";
 export default {
   methods: {
-    goToRoute(id) {
-      this.$router.push(`${this.place}/${id}`)
+    goToRoute(id, idx) {
+      this.$router.push(`${typeof this.place === 'string' ? this.place : this.place[idx]}/${id}`)
     }
   },
   props: {
@@ -26,7 +26,7 @@ export default {
       require: true
     },
     place: {
-      type: String,
+      type: [String, Array],
       require: true
     }
   },
@@ -36,6 +36,7 @@ export default {
 
 <style lang="scss" scoped>
 .card-place {
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   & > div {

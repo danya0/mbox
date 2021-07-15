@@ -55,7 +55,7 @@ html {
 }
 
 .with-header {
-  padding-top: 90px;
+  padding-top: 100px;
 }
 
 body, h1, h2, h3, p {

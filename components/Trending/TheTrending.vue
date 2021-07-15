@@ -3,7 +3,7 @@
     <div class="trending">
       <app-trending-panel
         linkText="Trending TV Shows"
-        :objects-array="library.tvShows"
+        :objects-array="library.tv"
         @link-click="$router.push('/tv')"
       />
       <app-trending-panel
