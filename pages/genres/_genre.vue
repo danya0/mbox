@@ -3,7 +3,7 @@
   <div class="page with-header">
     <div class="container">
       <div v-if="isExist && arr.length">
-        <app-cards-place place="series" :card-array="arr"/>
+        <app-cards-place :place="placesArray" :card-array="arr"/>
       </div>
       <div class="center">
         <h2 v-if="errorText">{{errorText}}</h2>
@@ -26,7 +26,8 @@ export default {
       isExist: isExistGenre(this.$route.params.genre),
       genre: this.$route.params.genre,
       errorText: '',
-      arr: []
+      arr: [],
+      placesArray: []
     }
   },
   computed: {
@@ -39,6 +40,7 @@ export default {
       : !this.arr.length
         ? 'There are no products in this genre :('
         : null
+    this.placesArray = this.arr.map(item => item.place)
   }
 }
 </script>

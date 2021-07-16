@@ -43,6 +43,36 @@ export const state = () => ({
         year: 2005,
         description: 'They come out onto a small patch of the stage right from the auditorium, exchanging words with others along the way, making compliments, asking for a light. They do not recognize any authority, decency or rule. They can easily ridicule any star person - even if she is sitting in the hall. They are part of their audience, they live by the same interests. Their goal is to entertain the audience, not to perform by playing a memorized program.'
       },
+      {
+        id: 5,
+        genres: [genres.comedy],
+        title: 'Comedy Club',
+        image: 'https://www.vokrug.tv/pic/product/1/8/5/d/185d16ed74d47af01146e61ac94b838f.jpg',
+        ageLimit: 16,
+        rating: '6.2',
+        year: 2005,
+        description: 'They come out onto a small patch of the stage right from the auditorium, exchanging words with others along the way, making compliments, asking for a light. They do not recognize any authority, decency or rule. They can easily ridicule any star person - even if she is sitting in the hall. They are part of their audience, they live by the same interests. Their goal is to entertain the audience, not to perform by playing a memorized program.'
+      },
+      {
+        id: 6,
+        genres: [genres.comedy],
+        title: 'Comedy Club',
+        image: 'https://www.vokrug.tv/pic/product/1/8/5/d/185d16ed74d47af01146e61ac94b838f.jpg',
+        ageLimit: 16,
+        rating: '6.2',
+        year: 2005,
+        description: 'They come out onto a small patch of the stage right from the auditorium, exchanging words with others along the way, making compliments, asking for a light. They do not recognize any authority, decency or rule. They can easily ridicule any star person - even if she is sitting in the hall. They are part of their audience, they live by the same interests. Their goal is to entertain the audience, not to perform by playing a memorized program.'
+      },
+      {
+        id: 7,
+        genres: [genres.comedy],
+        title: 'Comedy Club',
+        image: 'https://www.vokrug.tv/pic/product/1/8/5/d/185d16ed74d47af01146e61ac94b838f.jpg',
+        ageLimit: 16,
+        rating: '6.2',
+        year: 2005,
+        description: 'They come out onto a small patch of the stage right from the auditorium, exchanging words with others along the way, making compliments, asking for a light. They do not recognize any authority, decency or rule. They can easily ridicule any star person - even if she is sitting in the hall. They are part of their audience, they live by the same interests. Their goal is to entertain the audience, not to perform by playing a memorized program.'
+      },
     ],
     movies: [
       {
@@ -85,6 +115,36 @@ export const state = () => ({
         year: 2009,
         description: 'In the 22nd century, a paraplegic Marine is dispatched to the moon Pandora on a unique mission, but becomes torn between following orders and protecting an alien civilization.'
       },
+      {
+        id: 5,
+        genres: [genres.action, genres.scienceFiction],
+        title: 'Avatar',
+        image: 'https://www.themoviedb.org/t/p/w600_and_h900_bestv2/jRXYjXNq0Cs2TcJjLkki24MLp7u.jpg',
+        ageLimit: 12,
+        rating: '7.9',
+        year: 2009,
+        description: 'In the 22nd century, a paraplegic Marine is dispatched to the moon Pandora on a unique mission, but becomes torn between following orders and protecting an alien civilization.'
+      },
+      {
+        id: 6,
+        genres: [genres.action, genres.scienceFiction],
+        title: 'Avatar',
+        image: 'https://www.themoviedb.org/t/p/w600_and_h900_bestv2/jRXYjXNq0Cs2TcJjLkki24MLp7u.jpg',
+        ageLimit: 12,
+        rating: '7.9',
+        year: 2009,
+        description: 'In the 22nd century, a paraplegic Marine is dispatched to the moon Pandora on a unique mission, but becomes torn between following orders and protecting an alien civilization.'
+      },
+      {
+        id: 7,
+        genres: [genres.action, genres.scienceFiction],
+        title: 'Avatar',
+        image: 'https://www.themoviedb.org/t/p/w600_and_h900_bestv2/jRXYjXNq0Cs2TcJjLkki24MLp7u.jpg',
+        ageLimit: 12,
+        rating: '7.9',
+        year: 2009,
+        description: 'In the 22nd century, a paraplegic Marine is dispatched to the moon Pandora on a unique mission, but becomes torn between following orders and protecting an alien civilization.'
+      },
     ],
     series: [
       {
@@ -119,6 +179,36 @@ export const state = () => ({
       },
       {
         id: 4,
+        genres: [genres.drama],
+        title: 'Breaking Bad',
+        image: 'https://www.themoviedb.org/t/p/w600_and_h900_bestv2/ggFHVNu6YYI5L9pCfOacjizRGt.jpg',
+        ageLimit: 18,
+        rating: '8.9',
+        year: 2008,
+        description: 'When Walter White, a New Mexico chemistry teacher, is diagnosed with Stage III cancer and given a prognosis of only two years left to live. He becomes filled with a sense of fearlessness and an unrelenting desire to secure his family\'s financial future at any cost as he enters the dangerous world of drugs and crime.'
+      },
+      {
+        id: 5,
+        genres: [genres.drama],
+        title: 'Breaking Bad',
+        image: 'https://www.themoviedb.org/t/p/w600_and_h900_bestv2/ggFHVNu6YYI5L9pCfOacjizRGt.jpg',
+        ageLimit: 18,
+        rating: '8.9',
+        year: 2008,
+        description: 'When Walter White, a New Mexico chemistry teacher, is diagnosed with Stage III cancer and given a prognosis of only two years left to live. He becomes filled with a sense of fearlessness and an unrelenting desire to secure his family\'s financial future at any cost as he enters the dangerous world of drugs and crime.'
+      },
+      {
+        id: 6,
+        genres: [genres.drama],
+        title: 'Breaking Bad',
+        image: 'https://www.themoviedb.org/t/p/w600_and_h900_bestv2/ggFHVNu6YYI5L9pCfOacjizRGt.jpg',
+        ageLimit: 18,
+        rating: '8.9',
+        year: 2008,
+        description: 'When Walter White, a New Mexico chemistry teacher, is diagnosed with Stage III cancer and given a prognosis of only two years left to live. He becomes filled with a sense of fearlessness and an unrelenting desire to secure his family\'s financial future at any cost as he enters the dangerous world of drugs and crime.'
+      },
+      {
+        id: 7,
         genres: [genres.drama],
         title: 'Breaking Bad',
         image: 'https://www.themoviedb.org/t/p/w600_and_h900_bestv2/ggFHVNu6YYI5L9pCfOacjizRGt.jpg',
@@ -194,7 +284,7 @@ export const getters = {
     const toReturn = []
     Object.keys(state.library).forEach(key => {
       state.library[key].forEach(item => {
-        item.genres.includes(genre) ? toReturn.push(item) : null
+        item.genres.includes(genre) ? toReturn.push({...item, place: key}) : null
       })
     })
     return toReturn

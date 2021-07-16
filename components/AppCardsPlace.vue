@@ -17,7 +17,9 @@ import AppCard from "~/components/AppCard";
 export default {
   methods: {
     goToRoute(id, idx) {
-      this.$router.push(`${typeof this.place === 'string' ? this.place : this.place[idx]}/${id}`)
+      this.$router.push({
+        path: `/${typeof this.place === 'string' ? this.place : this.place[idx]}/${id}`
+      })
     }
   },
   props: {
