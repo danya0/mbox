@@ -40,7 +40,7 @@ export default {
   },
   methods: {
     goToPage(id) {
-      this.$router.push(`${this.place}/${id}`)
+      this.$router.push({path: `/${this.place}/${id}`})
     }
   }
 }

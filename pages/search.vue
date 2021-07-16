@@ -46,7 +46,6 @@ export default {
       }
 
       this.placesArray = this.searchArray.map(item => item.place)
-      console.log('this.placesArray', this.placesArray)
     }
   },
 
