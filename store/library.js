@@ -1,8 +1,11 @@
+import genres from "~/constants/genres";
+
 export const state = () => ({
   library: {
     tv: [
       {
         id: 1,
+        genres: [genres.comedy],
         title: 'Comedy Club',
         image: 'https://www.vokrug.tv/pic/product/1/8/5/d/185d16ed74d47af01146e61ac94b838f.jpg',
         ageLimit: 16,
@@ -12,6 +15,7 @@ export const state = () => ({
       },
       {
         id: 2,
+        genres: [genres.comedy],
         title: 'Comedy Club',
         image: 'https://www.vokrug.tv/pic/product/1/8/5/d/185d16ed74d47af01146e61ac94b838f.jpg',
         ageLimit: 16,
@@ -21,6 +25,7 @@ export const state = () => ({
       },
       {
         id: 3,
+        genres: [genres.comedy],
         title: 'Comedy Club',
         image: 'https://www.vokrug.tv/pic/product/1/8/5/d/185d16ed74d47af01146e61ac94b838f.jpg',
         ageLimit: 16,
@@ -30,6 +35,7 @@ export const state = () => ({
       },
       {
         id: 4,
+        genres: [genres.comedy],
         title: 'Comedy Club',
         image: 'https://www.vokrug.tv/pic/product/1/8/5/d/185d16ed74d47af01146e61ac94b838f.jpg',
         ageLimit: 16,
@@ -41,6 +47,7 @@ export const state = () => ({
     movies: [
       {
         id: 1,
+        genres: [genres.action, genres.scienceFiction],
         title: 'Avatar',
         image: 'https://www.themoviedb.org/t/p/w600_and_h900_bestv2/jRXYjXNq0Cs2TcJjLkki24MLp7u.jpg',
         ageLimit: 12,
@@ -50,6 +57,7 @@ export const state = () => ({
       },
       {
         id: 2,
+        genres: [genres.action, genres.scienceFiction],
         title: 'Avatar',
         image: 'https://www.themoviedb.org/t/p/w600_and_h900_bestv2/jRXYjXNq0Cs2TcJjLkki24MLp7u.jpg',
         ageLimit: 12,
@@ -59,6 +67,7 @@ export const state = () => ({
       },
       {
         id: 3,
+        genres: [genres.action, genres.scienceFiction],
         title: 'Avatar',
         image: 'https://www.themoviedb.org/t/p/w600_and_h900_bestv2/jRXYjXNq0Cs2TcJjLkki24MLp7u.jpg',
         ageLimit: 12,
@@ -68,6 +77,7 @@ export const state = () => ({
       },
       {
         id: 4,
+        genres: [genres.action, genres.scienceFiction],
         title: 'Avatar',
         image: 'https://www.themoviedb.org/t/p/w600_and_h900_bestv2/jRXYjXNq0Cs2TcJjLkki24MLp7u.jpg',
         ageLimit: 12,
@@ -79,6 +89,7 @@ export const state = () => ({
     series: [
       {
         id: 1,
+        genres: [genres.drama],
         title: 'Breaking Bad',
         image: 'https://www.themoviedb.org/t/p/w600_and_h900_bestv2/ggFHVNu6YYI5L9pCfOacjizRGt.jpg',
         ageLimit: 18,
@@ -88,6 +99,7 @@ export const state = () => ({
       },
       {
         id: 2,
+        genres: [genres.drama],
         title: 'Breaking Bad',
         image: 'https://www.themoviedb.org/t/p/w600_and_h900_bestv2/ggFHVNu6YYI5L9pCfOacjizRGt.jpg',
         ageLimit: 18,
@@ -97,6 +109,7 @@ export const state = () => ({
       },
       {
         id: 3,
+        genres: [genres.drama],
         title: 'Breaking Bad',
         image: 'https://www.themoviedb.org/t/p/w600_and_h900_bestv2/ggFHVNu6YYI5L9pCfOacjizRGt.jpg',
         ageLimit: 18,
@@ -106,6 +119,7 @@ export const state = () => ({
       },
       {
         id: 4,
+        genres: [genres.drama],
         title: 'Breaking Bad',
         image: 'https://www.themoviedb.org/t/p/w600_and_h900_bestv2/ggFHVNu6YYI5L9pCfOacjizRGt.jpg',
         ageLimit: 18,
@@ -175,6 +189,15 @@ export const getters = {
     arr.splice(idx, 1)
 
     return arr
+  },
+  getByGenre: state => genre => {
+    const toReturn = []
+    Object.keys(state.library).forEach(key => {
+      state.library[key].forEach(item => {
+        item.genres.includes(genre) ? toReturn.push(item) : null
+      })
+    })
+    return toReturn
   }
 }
 
