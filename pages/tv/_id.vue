@@ -1,22 +1,25 @@
 <template>
   <div class="page with-header">
     <div class="container">
-      <card-page
-        :title="item.title"
-        :image="item.image"
-        :type="toUpperFirst(place)"
-        :age-limit="item.ageLimit"
-        :rating="item.rating"
-        :year="item.year"
-        :descr="item.description"
-        class="mb"
-      />
-      <app-trending-panel
-        class="tablet-solo"
-        :link-text="linkText"
-        :objects-array="getAllButOne({id, place})"
-        :place="place"
-      />
+      <div v-if="item">
+        <card-page
+          :title="item.title"
+          :image="item.image"
+          :type="toUpperFirst(place)"
+          :age-limit="item.ageLimit"
+          :rating="item.rating"
+          :year="item.year"
+          :descr="item.description"
+          class="mb"
+        />
+        <app-trending-panel
+          class="tablet-solo"
+          :link-text="linkText"
+          :objects-array="getAllButOne({id, place})"
+          :place="place"
+        />
+      </div>
+      <p class="warn" v-else>There is no product with this ID</p>
     </div>
   </div>
 </template>
@@ -57,5 +60,11 @@ export default {
 <style scoped>
 .mb {
   margin-bottom: 50px;
+}
+
+.warn {
+  margin-top: 20px;
+  font-size: 32px;
+  text-align: center;
 }
 </style>
