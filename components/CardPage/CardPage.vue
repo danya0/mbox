@@ -5,6 +5,7 @@
     </div>
     <div class="card-page-block full-size pt">
       <div class="card-page__title">{{ title }}</div>
+      <app-button @click="openTrailerWithVideo(trailerVideo)" with-play>Watch trailer</app-button>
       <div class="card-page-stat">
         <the-main-information
           :type="type"
@@ -20,9 +21,14 @@
 
 <script>
 import TheMainInformation from "~/components/Main/TheMainInformation";
+import AppButton from "~/components/AppButton";
+import {mapActions} from "vuex";
 export default {
-  components: {TheMainInformation},
-  props: ['image', 'title', 'type', 'rating', 'ageLimit', 'year', 'descr']
+  components: {AppButton, TheMainInformation},
+  props: ['image', 'title', 'type', 'rating', 'ageLimit', 'year', 'descr', 'trailerVideo'],
+  methods: {
+    ...mapActions('trailer', ['openTrailerWithVideo'])
+  }
 }
 </script>
 
@@ -54,6 +60,10 @@ export default {
 
   &__title {
     font-size: 50px;
+  }
+
+  &-stat {
+    margin-top: 20px;
   }
 
   &__title, &-stat {

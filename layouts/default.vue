@@ -1,5 +1,11 @@
 <template>
   <div>
+    <transition
+      enter-class="trailer-enter-from"
+      leave-class="trailer-leave-from"
+      name="trailer">
+      <the-trailer v-if="trailer" :link="videoLink"/>
+    </transition>
     <the-burger-menu :active="burgerMenu" />
     <the-header :with-burger="burgerMenu" />
     <div class="content" :class="{'with-burger-menu': burgerMenu}">
@@ -13,6 +19,7 @@
 import TheHeader from "~/components/Header/TheHeader";
 import TheBurgerMenu from "~/components/Burger/TheBurgerMenu";
 import TheFooter from "~/components/Footer/TheFooter";
+import TheTrailer from "~/components/Trailer/TheTrailer";
 import {mapState} from "vuex"
 
 export default {
@@ -29,9 +36,10 @@ export default {
     },
   },
   computed: {
-    ...mapState({burgerMenu: 'burgerMenu'})
+    ...mapState({burgerMenu: 'burgerMenu'}),
+    ...mapState('trailer', ['trailer', 'videoLink']),
   },
-  components: {TheBurgerMenu, TheHeader, TheFooter}
+  components: {TheTrailer, TheBurgerMenu, TheHeader, TheFooter}
 }
 </script>
 
@@ -77,6 +85,19 @@ body {
 a {
   color: $text-color;
   text-decoration: none;
+}
+
+.trailer-enter-from,
+.trailer-leave-to {
+  opacity: 0;
+}
+.trailer-enter-to,
+.trailer-leave-from {
+  opacity: 1;
+}
+.trailer-enter-active,
+.trailer-leave-active {
+  transition: all .5s;
 }
 
 @include grid-tablet {

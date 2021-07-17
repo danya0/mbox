@@ -79,6 +79,7 @@ export const state = () => ({
         id: 1,
         genres: [genres.action, genres.scienceFiction],
         title: 'Avatar',
+        trailerVideo: 'https://www.youtube.com/embed/5PSNL1qE6VY',
         image: 'https://www.themoviedb.org/t/p/w600_and_h900_bestv2/jRXYjXNq0Cs2TcJjLkki24MLp7u.jpg',
         ageLimit: 12,
         rating: '7.9',
@@ -88,6 +89,7 @@ export const state = () => ({
       {
         id: 2,
         genres: [genres.action, genres.scienceFiction],
+        trailerVideo: 'https://www.youtube.com/embed/5PSNL1qE6VY',
         title: 'Avatar',
         image: 'https://www.themoviedb.org/t/p/w600_and_h900_bestv2/jRXYjXNq0Cs2TcJjLkki24MLp7u.jpg',
         ageLimit: 12,
