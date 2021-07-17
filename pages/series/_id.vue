@@ -13,7 +13,6 @@
           class="mb"
         />
         <app-trending-panel
-          class="tablet-solo"
           :link-text="linkText"
           :objects-array="getAllButOne({id, place})"
           :place="place"
