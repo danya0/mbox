@@ -1,130 +1,342 @@
+import genres from "~/constants/genres";
+
 export const state = () => ({
   library: {
-    tvShows: [
+    tv: [
       {
+        id: 1,
+        genres: [genres.comedy],
         title: 'Comedy Club',
-        image: 'https://www.vokrug.tv/pic/product/1/8/5/d/185d16ed74d47af01146e61ac94b838f.jpg'
+        image: 'https://www.vokrug.tv/pic/product/1/8/5/d/185d16ed74d47af01146e61ac94b838f.jpg',
+        ageLimit: 16,
+        rating: '6.2',
+        year: 2005,
+        description: 'They come out onto a small patch of the stage right from the auditorium, exchanging words with others along the way, making compliments, asking for a light. They do not recognize any authority, decency or rule. They can easily ridicule any star person - even if she is sitting in the hall. They are part of their audience, they live by the same interests. Their goal is to entertain the audience, not to perform by playing a memorized program.'
       },
       {
-        title: 'Голос. Дети',
-        image: 'https://static.1tv.ru/uploads/project/social_photo_image/2020/08/12/2162/_original/2162_662c59f6d1.jpg'
-      },
-      {
+        id: 2,
+        genres: [genres.comedy],
         title: 'Comedy Club',
-        image: 'https://www.vokrug.tv/pic/product/1/8/5/d/185d16ed74d47af01146e61ac94b838f.jpg'
+        image: 'https://www.vokrug.tv/pic/product/1/8/5/d/185d16ed74d47af01146e61ac94b838f.jpg',
+        ageLimit: 16,
+        rating: '6.2',
+        year: 2005,
+        description: 'They come out onto a small patch of the stage right from the auditorium, exchanging words with others along the way, making compliments, asking for a light. They do not recognize any authority, decency or rule. They can easily ridicule any star person - even if she is sitting in the hall. They are part of their audience, they live by the same interests. Their goal is to entertain the audience, not to perform by playing a memorized program.'
       },
       {
-        title: 'Голос. Дети',
-        image: 'https://static.1tv.ru/uploads/project/social_photo_image/2020/08/12/2162/_original/2162_662c59f6d1.jpg'
-      },
-      {
+        id: 3,
+        genres: [genres.comedy],
         title: 'Comedy Club',
-        image: 'https://www.vokrug.tv/pic/product/1/8/5/d/185d16ed74d47af01146e61ac94b838f.jpg'
+        image: 'https://www.vokrug.tv/pic/product/1/8/5/d/185d16ed74d47af01146e61ac94b838f.jpg',
+        ageLimit: 16,
+        rating: '6.2',
+        year: 2005,
+        description: 'They come out onto a small patch of the stage right from the auditorium, exchanging words with others along the way, making compliments, asking for a light. They do not recognize any authority, decency or rule. They can easily ridicule any star person - even if she is sitting in the hall. They are part of their audience, they live by the same interests. Their goal is to entertain the audience, not to perform by playing a memorized program.'
       },
       {
-        title: 'Голос. Дети',
-        image: 'https://static.1tv.ru/uploads/project/social_photo_image/2020/08/12/2162/_original/2162_662c59f6d1.jpg'
-      },
-      {
+        id: 4,
+        genres: [genres.comedy],
         title: 'Comedy Club',
-        image: 'https://www.vokrug.tv/pic/product/1/8/5/d/185d16ed74d47af01146e61ac94b838f.jpg'
+        image: 'https://www.vokrug.tv/pic/product/1/8/5/d/185d16ed74d47af01146e61ac94b838f.jpg',
+        ageLimit: 16,
+        rating: '6.2',
+        year: 2005,
+        description: 'They come out onto a small patch of the stage right from the auditorium, exchanging words with others along the way, making compliments, asking for a light. They do not recognize any authority, decency or rule. They can easily ridicule any star person - even if she is sitting in the hall. They are part of their audience, they live by the same interests. Their goal is to entertain the audience, not to perform by playing a memorized program.'
+      },
+      {
+        id: 5,
+        genres: [genres.comedy],
+        title: 'Comedy Club',
+        image: 'https://www.vokrug.tv/pic/product/1/8/5/d/185d16ed74d47af01146e61ac94b838f.jpg',
+        ageLimit: 16,
+        rating: '6.2',
+        year: 2005,
+        description: 'They come out onto a small patch of the stage right from the auditorium, exchanging words with others along the way, making compliments, asking for a light. They do not recognize any authority, decency or rule. They can easily ridicule any star person - even if she is sitting in the hall. They are part of their audience, they live by the same interests. Their goal is to entertain the audience, not to perform by playing a memorized program.'
+      },
+      {
+        id: 6,
+        genres: [genres.comedy],
+        title: 'Comedy Club',
+        image: 'https://www.vokrug.tv/pic/product/1/8/5/d/185d16ed74d47af01146e61ac94b838f.jpg',
+        ageLimit: 16,
+        rating: '6.2',
+        year: 2005,
+        description: 'They come out onto a small patch of the stage right from the auditorium, exchanging words with others along the way, making compliments, asking for a light. They do not recognize any authority, decency or rule. They can easily ridicule any star person - even if she is sitting in the hall. They are part of their audience, they live by the same interests. Their goal is to entertain the audience, not to perform by playing a memorized program.'
+      },
+      {
+        id: 7,
+        genres: [genres.comedy],
+        title: 'Comedy Club',
+        image: 'https://www.vokrug.tv/pic/product/1/8/5/d/185d16ed74d47af01146e61ac94b838f.jpg',
+        ageLimit: 16,
+        rating: '6.2',
+        year: 2005,
+        description: 'They come out onto a small patch of the stage right from the auditorium, exchanging words with others along the way, making compliments, asking for a light. They do not recognize any authority, decency or rule. They can easily ridicule any star person - even if she is sitting in the hall. They are part of their audience, they live by the same interests. Their goal is to entertain the audience, not to perform by playing a memorized program.'
       },
     ],
     movies: [
       {
-        title: 'Король Лев',
-        image: 'https://kinopoisk-ru.clstorage.net/1c64DB120/7497c7x4LqQ/zyAXFYjJskEJAhnszNDefmkJzYkDB1WfC9GoKBQ_I95xW4BKc9FEY7K0Tbt52I3OMj275xtepWOJ0FoTN2ZpgFlxQoJMWydA3oWfLE5RiizvShiYkFVADgyVf37D9O_UfdHcw_wbTGiq5d2qv0wamCIsLCUfyDanjEzVVuqzs9xJ7BlXgJe7wcbbFaoN0Np8ec-JzVqInR9cUWcl3bIhmLfZkcsxUEzpauoRZCLEHpcsrOzkE8YuZovKFwxn9zfUj6xVVMpROgaBHBEnyhha_HNJQQUex5-cnhosapJ4qNFwnRdL-xOHKCuj22ogDBpZa-PlZhoGqyrEQ9rCKrs8mUSvnVWNV_hAwdwaaMtT3vp-A00BFQNY1pxdISASeOZWcJmSw_bVgyciqpUj4AdZUaXuY-kYDibqCEDZT241Nt8GaRpaQJmxwkQUleINktE4MkDFCVrLmVBQ06jhX7WtVfSbFoN6m4PjraEcYiaEHVPka6Vs2AEsZYHD2YYueLpYzebZ2wUa-oXOF5EvyVsTvLbIiUjcAl6X0VKq6J4wYdR70FuIsxmJ5yRommchSFuTJO3u7VeDoSlLyd7CbrO41wXjkxqO2zsGDtDdZsSUVPpyyEUBlUwdU5SdaqGefWLRtBnXzXnfQSjh5lSv7QpS0KkqJSEVgyEuj46bz6gy91gM6dHdhJn7RoRSVS8Hk9v0fobFjtAHHZxa2avukf_lGDCakYy42YAj6yRebaQE21bv7SXp3o-o602L0Uog9_hZgmAb20JaukyLnN9nxtdefDsGT8pWRtqTWlDsZZn-6d641FCAs1MG4CJjnGWsTF0aIGMm5ldJ5i0AxZkH6DZ73A1tVJGHVnyODhBZ7QId2rb_T4ZBnYecWBBQYCASuixfPRLVAvzaxSRiodompIvZ3SjrJiJdRKlpgorWiin3uNtP7ZkdSB69DEScFK2FnN2-_AqJDhWFXh6bGS-iWrYj2TSZ3gl0XQVs66zZ426OkhbgLmGlUAMnbkHAHoLhfneWiq8VHM5Qe4HFXdIvBdXbuD8KB03YhFXa293prlwwpl88VJUIvF1AIWTtnSzqQ1sQpSwpbpFMraFMDRFN73C8XEljUleKWDQFxxeT5gJV072_CIXO1cZaU1wdK2sTPWzSdthSRf2bRemsbFLmKkIaWeotJOMRjuyvygqbzej2-FzOpBZVARx9Cw2RVKxJWZ06s86HBJLFUl6dXSwol3grGnfc3wF0EIemZCtTqiYFUprhbq9uG09vqEgL2cBn8b4TRKRf1wbaesiBkRxixhsSfH-GR89TQxgTkF-johK_rJawm15LuZGLJ-Ri0uYkgNQRoOCpY1mHb-KKgVPN5zK6G8YmmdnJm78KS50XZgRS3P12BA5Ok8TcVptT6iseMinXsd_QS_hYDSgo4FgiIoad120rK-yfjydnjQFUwGw-OlUOr9NdTFb0yscaG66MF1lxtsoKSVTK0JsUEuQgEjqtXnEd1w213UAs7K0aImqPW1rn6GsmX48gq4vCEksqsXMbzGGc0sEZuk0PGdYvjxKSvT7KyojSA58WHZ4r5pG-oJ72l1-CNdgDrGwmWK4hyh1QaixvKdOCZyhFwpaKZvr0lMPsllAI0DVDTFffbE1Vnfs5iILNEcCWUNMfYa0XMqYXfJISQTqVgaOjYZKnrgSRUmwsra1dAWkmQMOeji4-uVBJLZ0UhtC_CgvUXORNUZQ0f07OzxMFF9YcGGxomvEhV_Fcn8FxmoTqJeQc5O-MFBLpaKuvEklsIY1D04WpdveTSeYSn0ZXNQFHFJPkyR3SMLlDh4SQixgXU1XgIlYzrRh3m5fB9pPIqO1gXKzggFyYYi3sa1tJoK4ET1QKaz6xmMIoHVDH2fhDiNBap8xQnrx6zoUCVkOVUxyZ6yGSO2FY-R_azj7aTyIpqdEq5QWan6xkZ2YZianvzAJfRGD-exiDIF0TwlD9i0TU2q5LUpI1c0YHydMKXxic0qDilbcmEDOUW8Lx0wVhJeOd62fPm1ajKWumUcxt7ooKGsRuOziYRq6d081XOA3FGFcqjtwVvvlCgs7bSlAbW13gJ5u1ath3nNHBstTHZONlmeylR9Pa6uGr5BhPaWbJS9yPqH6zE8WtUdmH0TnMjReSLAJbk_x-gsxJkk2Y3JwQp6Xc-OoWPVHdhfMTSWshpdXpaIxaGmtoreZQB2EvwgDaSuL6Nl2N4ZbVCVswAMmbnqAO0Fz88g_JDVqMGFCQWe5iVjcr17xd2UV8GIGnKOLSJ-aKHpjrquRvHUJja4DOX0rktrndhqkaWs1bvcqMlVUhRNIT-vCAQk-YR1qQFJLhL9Y35lF42RELOhmO4WMpECvtRNrfa2wqJJuALilLBRuLJz5wVQSuWVJO0bTCTtQRJkUZHrP0z4XHXkUYkRyQpm_T8uORcJ2fhryajCypKZinqAie2SRsoeUSBqEpRwZcC2K__JeKLtFchJb1wMgbHW9DnJNzMsBEShVElttTGutmlXeglTCR3Qr-Gk7goGPdLO9FHtria2Ts08aooghCHwqvf_bZBWmZV04bfwmPk1XoRxGU9XoITQ-RhlcQXZaq6hc3ItS5nNGMOdgPJ2KjmuSoh9peqK1lq5eOo2aPgtFEL7A5EM0lmlTJV7rIR5IeIMMQ0rI-SM0HWQDe150X5-qWO6oR99nYy7GciaRg5dStJATWmKgjb2EQDiDqTcHeSu7yedWD7tQQSNL5gQVTGyoP1FX98QeNCFbH1JGTU6fj1DFrWnYU30F80Uhj6O3TL6mMGdDjLSvmHgAoaEUP24jnPXgZhSSXmwjbugEMWdRngxNW_jPARABWR5JbExMv7Zy54pgwWdAKdFmFZmdkXS-ug1CZYiLuKt9H5WpAA1bOZD_wWEelnhOH0LIIjZSTrwzUlrCwDEXMmIYWEVpWZ6cfeOCQPR_RSzpVgSvq6VnhaU_ZG2PkLirWCmiqjQ'
+        id: 1,
+        genres: [genres.action, genres.scienceFiction],
+        title: 'Avatar',
+        image: 'https://www.themoviedb.org/t/p/w600_and_h900_bestv2/jRXYjXNq0Cs2TcJjLkki24MLp7u.jpg',
+        ageLimit: 12,
+        rating: '7.9',
+        year: 2009,
+        description: 'In the 22nd century, a paraplegic Marine is dispatched to the moon Pandora on a unique mission, but becomes torn between following orders and protecting an alien civilization.'
       },
       {
-        title: 'Аватар',
-        image: 'https://kinopoisk-ru.clstorage.net/1c64DB120/7497c7x4LqQ/zyAXFYjJskEJAhnszNDefmkJzYkDB1WfC9GoKBQ_I95xW4BKc9FEY7K0TTk6msxNsj0vplqfcWNJUE5GIqapgFuzAwJaTqQVXoTLOFkEC3kvytnMxtVADgyVf37D9O_UfdHcw_wbTGiq5d2qv0wamCIsLCUfyDanjEzVVuqzs9xJ7BlXgJe7wcbbFaoN0Np8ec-JzVqInR9cUWcl3bIhmLfZkcsxUEzpauoRZCLEHpcsrOzkE8YuZovKFwxn9zfUj6xVVMpROgaBHBEnyhha_HNJQQUex5-cnhosapJ4qNFwnRdL-xOHKCuj22ogDBpZa-PlZhoGqyrEQ9rCKrs8mUSvnVWNV_hAwdwaaMtT3vp-A00BFQNY1pxdISASeOZWcJmSw_bVgyciqpUj4AdZUaXuY-kYDibqCEDZT241Nt8GaRpaQJmxwkQUleINktE4MkDFCVrLmVBQ06jhX7WtVfSbFoN6m4PjraEcYiaEHVPka6Vs2AEsZYHD2YYueLpYzebZ2wUa-oXOF5EvyVsTvLbIiUjcAl6X0VKq6J4wYdR70FuIsxmJ5yRommchSFuTJO3u7VeDoSlLyd7CbrO41wXjkxqO2zsGDtDdZsSUVPpyyEUBlUwdU5SdaqGefWLRtBnXzXnfQSjh5lSv7QpS0KkqJSEVgyEuj46bz6gy91gM6dHdhJn7RoRSVS8Hk9v0fobFjtAHHZxa2avukf_lGDCakYy42YAj6yRebaQE21bv7SXp3o-o602L0Uog9_hZgmAb20JaukyLnN9nxtdefDsGT8pWRtqTWlDsZZn-6d641FCAs1MG4CJjnGWsTF0aIGMm5ldJ5i0AxZkH6DZ73A1tVJGHVnyODhBZ7QId2rb_T4ZBnYecWBBQYCASuixfPRLVAvzaxSRiodompIvZ3SjrJiJdRKlpgorWiin3uNtP7ZkdSB69DEScFK2FnN2-_AqJDhWFXh6bGS-iWrYj2TSZ3gl0XQVs66zZ426OkhbgLmGlUAMnbkHAHoLhfneWiq8VHM5Qe4HFXdIvBdXbuD8KB03YhFXa293prlwwpl88VJUIvF1AIWTtnSzqQ1sQpSwpbpFMraFMDRFN73C8XEljUleKWDQFxxeT5gJV072_CIXO1cZaU1wdK2sTPWzSdthSRf2bRemsbFLmKkIaWeotJOMRjuyvygqbzej2-FzOpBZVARx9Cw2RVKxJWZ06s86HBJLFUl6dXSwol3grGnfc3wF0EIemZCtTqiYFUprhbq9uG09vqEgL2cBn8b4TRKRf1wbaesiBkRxixhsSfH-GR89TQxgTkF-johK_rJawm15LuZGLJ-Ri0uYkgNQRoOCpY1mHb-KKgVPN5zK6G8YmmdnJm78KS50XZgRS3P12BA5Ok8TcVptT6iseMinXsd_QS_hYDSgo4FgiIoad120rK-yfjydnjQFUwGw-OlUOr9NdTFb0yscaG66MF1lxtsoKSVTK0JsUEuQgEjqtXnEd1w213UAs7K0aImqPW1rn6GsmX48gq4vCEksqsXMbzGGc0sEZuk0PGdYvjxKSvT7KyojSA58WHZ4r5pG-oJ72l1-CNdgDrGwmWK4hyh1QaixvKdOCZyhFwpaKZvr0lMPsllAI0DVDTFffbE1Vnfs5iILNEcCWUNMfYa0XMqYXfJISQTqVgaOjYZKnrgSRUmwsra1dAWkmQMOeji4-uVBJLZ0UhtC_CgvUXORNUZQ0f07OzxMFF9YcGGxomvEhV_Fcn8FxmoTqJeQc5O-MFBLpaKuvEklsIY1D04WpdveTSeYSn0ZXNQFHFJPkyR3SMLlDh4SQixgXU1XgIlYzrRh3m5fB9pPIqO1gXKzggFyYYi3sa1tJoK4ET1QKaz6xmMIoHVDH2fhDiNBap8xQnrx6zoUCVkOVUxyZ6yGSO2FY-R_azj7aTyIpqdEq5QWan6xkZ2YZianvzAJfRGD-exiDIF0TwlD9i0TU2q5LUpI1c0YHydMKXxic0qDilbcmEDOUW8Lx0wVhJeOd62fPm1ajKWumUcxt7ooKGsRuOziYRq6d081XOA3FGFcqjtwVvvlCgs7bSlAbW13gJ5u1ath3nNHBstTHZONlmeylR9Pa6uGr5BhPaWbJS9yPqH6zE8WtUdmH0TnMjReSLAJbk_x-gsxJkk2Y3JwQp6Xc-OoWPVHdhfMTSWshpdXpaIxaGmtoreZQB2EvwgDaSuL6Nl2N4ZbVCVswAMmbnqAO0Fz88g_JDVqMGFCQWe5iVjcr17xd2UV8GIGnKOLSJ-aKHpjrquRvHUJja4DOX0rktrndhqkaWs1bvcqMlVUhRNIT-vCAQk-YR1qQFJLhL9Y35lF42RELOhmO4WMpECvtRNrfa2wqJJuALilLBRuLJz5wVQSuWVJO0bTCTtQRJkUZHrP0z4XHXkUYkRyQpm_T8uORcJ2fhryajCypKZinqAie2SRsoeUSBqEpRwZcC2K__JeKLtFchJb1wMgbHW9DnJNzMsBEShVElttTGutmlXeglTCR3Qr-Gk7goGPdLO9FHtria2Ts08aooghCHwqvf_bZBWmZV04bfwmPk1XoRxGU9XoITQ-RhlcQXZaq6hc3ItS5nNGMOdgPJ2KjmuSoh9peqK1lq5eOo2aPgtFEL7A5EM0lmlTJV7rIR5IeIMMQ0rI-SM0HWQDe150X5-qWO6oR99nYy7GciaRg5dStJATWmKgjb2EQDiDqTcHeSu7yedWD7tQQSNL5gQVTGyoP1FX98QeNCFbH1JGTU6fj1DFrWnYU30F80Uhj6O3TL6mMGdDjLSvmHgAoaEUP24jnPXgZhSSXmwjbugEMWdRngxNW_jPARABWR5JbExMv7Zy54pgwWdAKdFmFZmdkXS-ug1CZYiLuKt9H5WpAA1bOZD_wWEelnhOH0LIIjZSTrwzUlrCwDEXMmIYWEVpWZ6cfeOCQPR_RSzpVgSvq6VnhaU_ZG2PkLirWCmiqjQ'
+        id: 2,
+        genres: [genres.action, genres.scienceFiction],
+        title: 'Avatar',
+        image: 'https://www.themoviedb.org/t/p/w600_and_h900_bestv2/jRXYjXNq0Cs2TcJjLkki24MLp7u.jpg',
+        ageLimit: 12,
+        rating: '7.9',
+        year: 2009,
+        description: 'In the 22nd century, a paraplegic Marine is dispatched to the moon Pandora on a unique mission, but becomes torn between following orders and protecting an alien civilization.'
       },
       {
-        title: 'Король Лев',
-        image: 'https://kinopoisk-ru.clstorage.net/1c64DB120/7497c7x4LqQ/zyAXFYjJskEJAhnszNDefmkJzYkDB1WfC9GoKBQ_I95xW4BKc9FEY7K0Tbt52I3OMj275xtepWOJ0FoTN2ZpgFlxQoJMWydA3oWfLE5RiizvShiYkFVADgyVf37D9O_UfdHcw_wbTGiq5d2qv0wamCIsLCUfyDanjEzVVuqzs9xJ7BlXgJe7wcbbFaoN0Np8ec-JzVqInR9cUWcl3bIhmLfZkcsxUEzpauoRZCLEHpcsrOzkE8YuZovKFwxn9zfUj6xVVMpROgaBHBEnyhha_HNJQQUex5-cnhosapJ4qNFwnRdL-xOHKCuj22ogDBpZa-PlZhoGqyrEQ9rCKrs8mUSvnVWNV_hAwdwaaMtT3vp-A00BFQNY1pxdISASeOZWcJmSw_bVgyciqpUj4AdZUaXuY-kYDibqCEDZT241Nt8GaRpaQJmxwkQUleINktE4MkDFCVrLmVBQ06jhX7WtVfSbFoN6m4PjraEcYiaEHVPka6Vs2AEsZYHD2YYueLpYzebZ2wUa-oXOF5EvyVsTvLbIiUjcAl6X0VKq6J4wYdR70FuIsxmJ5yRommchSFuTJO3u7VeDoSlLyd7CbrO41wXjkxqO2zsGDtDdZsSUVPpyyEUBlUwdU5SdaqGefWLRtBnXzXnfQSjh5lSv7QpS0KkqJSEVgyEuj46bz6gy91gM6dHdhJn7RoRSVS8Hk9v0fobFjtAHHZxa2avukf_lGDCakYy42YAj6yRebaQE21bv7SXp3o-o602L0Uog9_hZgmAb20JaukyLnN9nxtdefDsGT8pWRtqTWlDsZZn-6d641FCAs1MG4CJjnGWsTF0aIGMm5ldJ5i0AxZkH6DZ73A1tVJGHVnyODhBZ7QId2rb_T4ZBnYecWBBQYCASuixfPRLVAvzaxSRiodompIvZ3SjrJiJdRKlpgorWiin3uNtP7ZkdSB69DEScFK2FnN2-_AqJDhWFXh6bGS-iWrYj2TSZ3gl0XQVs66zZ426OkhbgLmGlUAMnbkHAHoLhfneWiq8VHM5Qe4HFXdIvBdXbuD8KB03YhFXa293prlwwpl88VJUIvF1AIWTtnSzqQ1sQpSwpbpFMraFMDRFN73C8XEljUleKWDQFxxeT5gJV072_CIXO1cZaU1wdK2sTPWzSdthSRf2bRemsbFLmKkIaWeotJOMRjuyvygqbzej2-FzOpBZVARx9Cw2RVKxJWZ06s86HBJLFUl6dXSwol3grGnfc3wF0EIemZCtTqiYFUprhbq9uG09vqEgL2cBn8b4TRKRf1wbaesiBkRxixhsSfH-GR89TQxgTkF-johK_rJawm15LuZGLJ-Ri0uYkgNQRoOCpY1mHb-KKgVPN5zK6G8YmmdnJm78KS50XZgRS3P12BA5Ok8TcVptT6iseMinXsd_QS_hYDSgo4FgiIoad120rK-yfjydnjQFUwGw-OlUOr9NdTFb0yscaG66MF1lxtsoKSVTK0JsUEuQgEjqtXnEd1w213UAs7K0aImqPW1rn6GsmX48gq4vCEksqsXMbzGGc0sEZuk0PGdYvjxKSvT7KyojSA58WHZ4r5pG-oJ72l1-CNdgDrGwmWK4hyh1QaixvKdOCZyhFwpaKZvr0lMPsllAI0DVDTFffbE1Vnfs5iILNEcCWUNMfYa0XMqYXfJISQTqVgaOjYZKnrgSRUmwsra1dAWkmQMOeji4-uVBJLZ0UhtC_CgvUXORNUZQ0f07OzxMFF9YcGGxomvEhV_Fcn8FxmoTqJeQc5O-MFBLpaKuvEklsIY1D04WpdveTSeYSn0ZXNQFHFJPkyR3SMLlDh4SQixgXU1XgIlYzrRh3m5fB9pPIqO1gXKzggFyYYi3sa1tJoK4ET1QKaz6xmMIoHVDH2fhDiNBap8xQnrx6zoUCVkOVUxyZ6yGSO2FY-R_azj7aTyIpqdEq5QWan6xkZ2YZianvzAJfRGD-exiDIF0TwlD9i0TU2q5LUpI1c0YHydMKXxic0qDilbcmEDOUW8Lx0wVhJeOd62fPm1ajKWumUcxt7ooKGsRuOziYRq6d081XOA3FGFcqjtwVvvlCgs7bSlAbW13gJ5u1ath3nNHBstTHZONlmeylR9Pa6uGr5BhPaWbJS9yPqH6zE8WtUdmH0TnMjReSLAJbk_x-gsxJkk2Y3JwQp6Xc-OoWPVHdhfMTSWshpdXpaIxaGmtoreZQB2EvwgDaSuL6Nl2N4ZbVCVswAMmbnqAO0Fz88g_JDVqMGFCQWe5iVjcr17xd2UV8GIGnKOLSJ-aKHpjrquRvHUJja4DOX0rktrndhqkaWs1bvcqMlVUhRNIT-vCAQk-YR1qQFJLhL9Y35lF42RELOhmO4WMpECvtRNrfa2wqJJuALilLBRuLJz5wVQSuWVJO0bTCTtQRJkUZHrP0z4XHXkUYkRyQpm_T8uORcJ2fhryajCypKZinqAie2SRsoeUSBqEpRwZcC2K__JeKLtFchJb1wMgbHW9DnJNzMsBEShVElttTGutmlXeglTCR3Qr-Gk7goGPdLO9FHtria2Ts08aooghCHwqvf_bZBWmZV04bfwmPk1XoRxGU9XoITQ-RhlcQXZaq6hc3ItS5nNGMOdgPJ2KjmuSoh9peqK1lq5eOo2aPgtFEL7A5EM0lmlTJV7rIR5IeIMMQ0rI-SM0HWQDe150X5-qWO6oR99nYy7GciaRg5dStJATWmKgjb2EQDiDqTcHeSu7yedWD7tQQSNL5gQVTGyoP1FX98QeNCFbH1JGTU6fj1DFrWnYU30F80Uhj6O3TL6mMGdDjLSvmHgAoaEUP24jnPXgZhSSXmwjbugEMWdRngxNW_jPARABWR5JbExMv7Zy54pgwWdAKdFmFZmdkXS-ug1CZYiLuKt9H5WpAA1bOZD_wWEelnhOH0LIIjZSTrwzUlrCwDEXMmIYWEVpWZ6cfeOCQPR_RSzpVgSvq6VnhaU_ZG2PkLirWCmiqjQ'
+        id: 3,
+        genres: [genres.action, genres.scienceFiction],
+        title: 'Avatar',
+        image: 'https://www.themoviedb.org/t/p/w600_and_h900_bestv2/jRXYjXNq0Cs2TcJjLkki24MLp7u.jpg',
+        ageLimit: 12,
+        rating: '7.9',
+        year: 2009,
+        description: 'In the 22nd century, a paraplegic Marine is dispatched to the moon Pandora on a unique mission, but becomes torn between following orders and protecting an alien civilization.'
       },
       {
-        title: 'Аватар',
-        image: 'https://kinopoisk-ru.clstorage.net/1c64DB120/7497c7x4LqQ/zyAXFYjJskEJAhnszNDefmkJzYkDB1WfC9GoKBQ_I95xW4BKc9FEY7K0TTk6msxNsj0vplqfcWNJUE5GIqapgFuzAwJaTqQVXoTLOFkEC3kvytnMxtVADgyVf37D9O_UfdHcw_wbTGiq5d2qv0wamCIsLCUfyDanjEzVVuqzs9xJ7BlXgJe7wcbbFaoN0Np8ec-JzVqInR9cUWcl3bIhmLfZkcsxUEzpauoRZCLEHpcsrOzkE8YuZovKFwxn9zfUj6xVVMpROgaBHBEnyhha_HNJQQUex5-cnhosapJ4qNFwnRdL-xOHKCuj22ogDBpZa-PlZhoGqyrEQ9rCKrs8mUSvnVWNV_hAwdwaaMtT3vp-A00BFQNY1pxdISASeOZWcJmSw_bVgyciqpUj4AdZUaXuY-kYDibqCEDZT241Nt8GaRpaQJmxwkQUleINktE4MkDFCVrLmVBQ06jhX7WtVfSbFoN6m4PjraEcYiaEHVPka6Vs2AEsZYHD2YYueLpYzebZ2wUa-oXOF5EvyVsTvLbIiUjcAl6X0VKq6J4wYdR70FuIsxmJ5yRommchSFuTJO3u7VeDoSlLyd7CbrO41wXjkxqO2zsGDtDdZsSUVPpyyEUBlUwdU5SdaqGefWLRtBnXzXnfQSjh5lSv7QpS0KkqJSEVgyEuj46bz6gy91gM6dHdhJn7RoRSVS8Hk9v0fobFjtAHHZxa2avukf_lGDCakYy42YAj6yRebaQE21bv7SXp3o-o602L0Uog9_hZgmAb20JaukyLnN9nxtdefDsGT8pWRtqTWlDsZZn-6d641FCAs1MG4CJjnGWsTF0aIGMm5ldJ5i0AxZkH6DZ73A1tVJGHVnyODhBZ7QId2rb_T4ZBnYecWBBQYCASuixfPRLVAvzaxSRiodompIvZ3SjrJiJdRKlpgorWiin3uNtP7ZkdSB69DEScFK2FnN2-_AqJDhWFXh6bGS-iWrYj2TSZ3gl0XQVs66zZ426OkhbgLmGlUAMnbkHAHoLhfneWiq8VHM5Qe4HFXdIvBdXbuD8KB03YhFXa293prlwwpl88VJUIvF1AIWTtnSzqQ1sQpSwpbpFMraFMDRFN73C8XEljUleKWDQFxxeT5gJV072_CIXO1cZaU1wdK2sTPWzSdthSRf2bRemsbFLmKkIaWeotJOMRjuyvygqbzej2-FzOpBZVARx9Cw2RVKxJWZ06s86HBJLFUl6dXSwol3grGnfc3wF0EIemZCtTqiYFUprhbq9uG09vqEgL2cBn8b4TRKRf1wbaesiBkRxixhsSfH-GR89TQxgTkF-johK_rJawm15LuZGLJ-Ri0uYkgNQRoOCpY1mHb-KKgVPN5zK6G8YmmdnJm78KS50XZgRS3P12BA5Ok8TcVptT6iseMinXsd_QS_hYDSgo4FgiIoad120rK-yfjydnjQFUwGw-OlUOr9NdTFb0yscaG66MF1lxtsoKSVTK0JsUEuQgEjqtXnEd1w213UAs7K0aImqPW1rn6GsmX48gq4vCEksqsXMbzGGc0sEZuk0PGdYvjxKSvT7KyojSA58WHZ4r5pG-oJ72l1-CNdgDrGwmWK4hyh1QaixvKdOCZyhFwpaKZvr0lMPsllAI0DVDTFffbE1Vnfs5iILNEcCWUNMfYa0XMqYXfJISQTqVgaOjYZKnrgSRUmwsra1dAWkmQMOeji4-uVBJLZ0UhtC_CgvUXORNUZQ0f07OzxMFF9YcGGxomvEhV_Fcn8FxmoTqJeQc5O-MFBLpaKuvEklsIY1D04WpdveTSeYSn0ZXNQFHFJPkyR3SMLlDh4SQixgXU1XgIlYzrRh3m5fB9pPIqO1gXKzggFyYYi3sa1tJoK4ET1QKaz6xmMIoHVDH2fhDiNBap8xQnrx6zoUCVkOVUxyZ6yGSO2FY-R_azj7aTyIpqdEq5QWan6xkZ2YZianvzAJfRGD-exiDIF0TwlD9i0TU2q5LUpI1c0YHydMKXxic0qDilbcmEDOUW8Lx0wVhJeOd62fPm1ajKWumUcxt7ooKGsRuOziYRq6d081XOA3FGFcqjtwVvvlCgs7bSlAbW13gJ5u1ath3nNHBstTHZONlmeylR9Pa6uGr5BhPaWbJS9yPqH6zE8WtUdmH0TnMjReSLAJbk_x-gsxJkk2Y3JwQp6Xc-OoWPVHdhfMTSWshpdXpaIxaGmtoreZQB2EvwgDaSuL6Nl2N4ZbVCVswAMmbnqAO0Fz88g_JDVqMGFCQWe5iVjcr17xd2UV8GIGnKOLSJ-aKHpjrquRvHUJja4DOX0rktrndhqkaWs1bvcqMlVUhRNIT-vCAQk-YR1qQFJLhL9Y35lF42RELOhmO4WMpECvtRNrfa2wqJJuALilLBRuLJz5wVQSuWVJO0bTCTtQRJkUZHrP0z4XHXkUYkRyQpm_T8uORcJ2fhryajCypKZinqAie2SRsoeUSBqEpRwZcC2K__JeKLtFchJb1wMgbHW9DnJNzMsBEShVElttTGutmlXeglTCR3Qr-Gk7goGPdLO9FHtria2Ts08aooghCHwqvf_bZBWmZV04bfwmPk1XoRxGU9XoITQ-RhlcQXZaq6hc3ItS5nNGMOdgPJ2KjmuSoh9peqK1lq5eOo2aPgtFEL7A5EM0lmlTJV7rIR5IeIMMQ0rI-SM0HWQDe150X5-qWO6oR99nYy7GciaRg5dStJATWmKgjb2EQDiDqTcHeSu7yedWD7tQQSNL5gQVTGyoP1FX98QeNCFbH1JGTU6fj1DFrWnYU30F80Uhj6O3TL6mMGdDjLSvmHgAoaEUP24jnPXgZhSSXmwjbugEMWdRngxNW_jPARABWR5JbExMv7Zy54pgwWdAKdFmFZmdkXS-ug1CZYiLuKt9H5WpAA1bOZD_wWEelnhOH0LIIjZSTrwzUlrCwDEXMmIYWEVpWZ6cfeOCQPR_RSzpVgSvq6VnhaU_ZG2PkLirWCmiqjQ'
+        id: 4,
+        genres: [genres.action, genres.scienceFiction],
+        title: 'Avatar',
+        image: 'https://www.themoviedb.org/t/p/w600_and_h900_bestv2/jRXYjXNq0Cs2TcJjLkki24MLp7u.jpg',
+        ageLimit: 12,
+        rating: '7.9',
+        year: 2009,
+        description: 'In the 22nd century, a paraplegic Marine is dispatched to the moon Pandora on a unique mission, but becomes torn between following orders and protecting an alien civilization.'
       },
       {
-        title: 'Король Лев',
-        image: 'https://kinopoisk-ru.clstorage.net/1c64DB120/7497c7x4LqQ/zyAXFYjJskEJAhnszNDefmkJzYkDB1WfC9GoKBQ_I95xW4BKc9FEY7K0Tbt52I3OMj275xtepWOJ0FoTN2ZpgFlxQoJMWydA3oWfLE5RiizvShiYkFVADgyVf37D9O_UfdHcw_wbTGiq5d2qv0wamCIsLCUfyDanjEzVVuqzs9xJ7BlXgJe7wcbbFaoN0Np8ec-JzVqInR9cUWcl3bIhmLfZkcsxUEzpauoRZCLEHpcsrOzkE8YuZovKFwxn9zfUj6xVVMpROgaBHBEnyhha_HNJQQUex5-cnhosapJ4qNFwnRdL-xOHKCuj22ogDBpZa-PlZhoGqyrEQ9rCKrs8mUSvnVWNV_hAwdwaaMtT3vp-A00BFQNY1pxdISASeOZWcJmSw_bVgyciqpUj4AdZUaXuY-kYDibqCEDZT241Nt8GaRpaQJmxwkQUleINktE4MkDFCVrLmVBQ06jhX7WtVfSbFoN6m4PjraEcYiaEHVPka6Vs2AEsZYHD2YYueLpYzebZ2wUa-oXOF5EvyVsTvLbIiUjcAl6X0VKq6J4wYdR70FuIsxmJ5yRommchSFuTJO3u7VeDoSlLyd7CbrO41wXjkxqO2zsGDtDdZsSUVPpyyEUBlUwdU5SdaqGefWLRtBnXzXnfQSjh5lSv7QpS0KkqJSEVgyEuj46bz6gy91gM6dHdhJn7RoRSVS8Hk9v0fobFjtAHHZxa2avukf_lGDCakYy42YAj6yRebaQE21bv7SXp3o-o602L0Uog9_hZgmAb20JaukyLnN9nxtdefDsGT8pWRtqTWlDsZZn-6d641FCAs1MG4CJjnGWsTF0aIGMm5ldJ5i0AxZkH6DZ73A1tVJGHVnyODhBZ7QId2rb_T4ZBnYecWBBQYCASuixfPRLVAvzaxSRiodompIvZ3SjrJiJdRKlpgorWiin3uNtP7ZkdSB69DEScFK2FnN2-_AqJDhWFXh6bGS-iWrYj2TSZ3gl0XQVs66zZ426OkhbgLmGlUAMnbkHAHoLhfneWiq8VHM5Qe4HFXdIvBdXbuD8KB03YhFXa293prlwwpl88VJUIvF1AIWTtnSzqQ1sQpSwpbpFMraFMDRFN73C8XEljUleKWDQFxxeT5gJV072_CIXO1cZaU1wdK2sTPWzSdthSRf2bRemsbFLmKkIaWeotJOMRjuyvygqbzej2-FzOpBZVARx9Cw2RVKxJWZ06s86HBJLFUl6dXSwol3grGnfc3wF0EIemZCtTqiYFUprhbq9uG09vqEgL2cBn8b4TRKRf1wbaesiBkRxixhsSfH-GR89TQxgTkF-johK_rJawm15LuZGLJ-Ri0uYkgNQRoOCpY1mHb-KKgVPN5zK6G8YmmdnJm78KS50XZgRS3P12BA5Ok8TcVptT6iseMinXsd_QS_hYDSgo4FgiIoad120rK-yfjydnjQFUwGw-OlUOr9NdTFb0yscaG66MF1lxtsoKSVTK0JsUEuQgEjqtXnEd1w213UAs7K0aImqPW1rn6GsmX48gq4vCEksqsXMbzGGc0sEZuk0PGdYvjxKSvT7KyojSA58WHZ4r5pG-oJ72l1-CNdgDrGwmWK4hyh1QaixvKdOCZyhFwpaKZvr0lMPsllAI0DVDTFffbE1Vnfs5iILNEcCWUNMfYa0XMqYXfJISQTqVgaOjYZKnrgSRUmwsra1dAWkmQMOeji4-uVBJLZ0UhtC_CgvUXORNUZQ0f07OzxMFF9YcGGxomvEhV_Fcn8FxmoTqJeQc5O-MFBLpaKuvEklsIY1D04WpdveTSeYSn0ZXNQFHFJPkyR3SMLlDh4SQixgXU1XgIlYzrRh3m5fB9pPIqO1gXKzggFyYYi3sa1tJoK4ET1QKaz6xmMIoHVDH2fhDiNBap8xQnrx6zoUCVkOVUxyZ6yGSO2FY-R_azj7aTyIpqdEq5QWan6xkZ2YZianvzAJfRGD-exiDIF0TwlD9i0TU2q5LUpI1c0YHydMKXxic0qDilbcmEDOUW8Lx0wVhJeOd62fPm1ajKWumUcxt7ooKGsRuOziYRq6d081XOA3FGFcqjtwVvvlCgs7bSlAbW13gJ5u1ath3nNHBstTHZONlmeylR9Pa6uGr5BhPaWbJS9yPqH6zE8WtUdmH0TnMjReSLAJbk_x-gsxJkk2Y3JwQp6Xc-OoWPVHdhfMTSWshpdXpaIxaGmtoreZQB2EvwgDaSuL6Nl2N4ZbVCVswAMmbnqAO0Fz88g_JDVqMGFCQWe5iVjcr17xd2UV8GIGnKOLSJ-aKHpjrquRvHUJja4DOX0rktrndhqkaWs1bvcqMlVUhRNIT-vCAQk-YR1qQFJLhL9Y35lF42RELOhmO4WMpECvtRNrfa2wqJJuALilLBRuLJz5wVQSuWVJO0bTCTtQRJkUZHrP0z4XHXkUYkRyQpm_T8uORcJ2fhryajCypKZinqAie2SRsoeUSBqEpRwZcC2K__JeKLtFchJb1wMgbHW9DnJNzMsBEShVElttTGutmlXeglTCR3Qr-Gk7goGPdLO9FHtria2Ts08aooghCHwqvf_bZBWmZV04bfwmPk1XoRxGU9XoITQ-RhlcQXZaq6hc3ItS5nNGMOdgPJ2KjmuSoh9peqK1lq5eOo2aPgtFEL7A5EM0lmlTJV7rIR5IeIMMQ0rI-SM0HWQDe150X5-qWO6oR99nYy7GciaRg5dStJATWmKgjb2EQDiDqTcHeSu7yedWD7tQQSNL5gQVTGyoP1FX98QeNCFbH1JGTU6fj1DFrWnYU30F80Uhj6O3TL6mMGdDjLSvmHgAoaEUP24jnPXgZhSSXmwjbugEMWdRngxNW_jPARABWR5JbExMv7Zy54pgwWdAKdFmFZmdkXS-ug1CZYiLuKt9H5WpAA1bOZD_wWEelnhOH0LIIjZSTrwzUlrCwDEXMmIYWEVpWZ6cfeOCQPR_RSzpVgSvq6VnhaU_ZG2PkLirWCmiqjQ'
+        id: 5,
+        genres: [genres.action, genres.scienceFiction],
+        title: 'Avatar',
+        image: 'https://www.themoviedb.org/t/p/w600_and_h900_bestv2/jRXYjXNq0Cs2TcJjLkki24MLp7u.jpg',
+        ageLimit: 12,
+        rating: '7.9',
+        year: 2009,
+        description: 'In the 22nd century, a paraplegic Marine is dispatched to the moon Pandora on a unique mission, but becomes torn between following orders and protecting an alien civilization.'
       },
       {
-        title: 'Аватар',
-        image: 'https://kinopoisk-ru.clstorage.net/1c64DB120/7497c7x4LqQ/zyAXFYjJskEJAhnszNDefmkJzYkDB1WfC9GoKBQ_I95xW4BKc9FEY7K0TTk6msxNsj0vplqfcWNJUE5GIqapgFuzAwJaTqQVXoTLOFkEC3kvytnMxtVADgyVf37D9O_UfdHcw_wbTGiq5d2qv0wamCIsLCUfyDanjEzVVuqzs9xJ7BlXgJe7wcbbFaoN0Np8ec-JzVqInR9cUWcl3bIhmLfZkcsxUEzpauoRZCLEHpcsrOzkE8YuZovKFwxn9zfUj6xVVMpROgaBHBEnyhha_HNJQQUex5-cnhosapJ4qNFwnRdL-xOHKCuj22ogDBpZa-PlZhoGqyrEQ9rCKrs8mUSvnVWNV_hAwdwaaMtT3vp-A00BFQNY1pxdISASeOZWcJmSw_bVgyciqpUj4AdZUaXuY-kYDibqCEDZT241Nt8GaRpaQJmxwkQUleINktE4MkDFCVrLmVBQ06jhX7WtVfSbFoN6m4PjraEcYiaEHVPka6Vs2AEsZYHD2YYueLpYzebZ2wUa-oXOF5EvyVsTvLbIiUjcAl6X0VKq6J4wYdR70FuIsxmJ5yRommchSFuTJO3u7VeDoSlLyd7CbrO41wXjkxqO2zsGDtDdZsSUVPpyyEUBlUwdU5SdaqGefWLRtBnXzXnfQSjh5lSv7QpS0KkqJSEVgyEuj46bz6gy91gM6dHdhJn7RoRSVS8Hk9v0fobFjtAHHZxa2avukf_lGDCakYy42YAj6yRebaQE21bv7SXp3o-o602L0Uog9_hZgmAb20JaukyLnN9nxtdefDsGT8pWRtqTWlDsZZn-6d641FCAs1MG4CJjnGWsTF0aIGMm5ldJ5i0AxZkH6DZ73A1tVJGHVnyODhBZ7QId2rb_T4ZBnYecWBBQYCASuixfPRLVAvzaxSRiodompIvZ3SjrJiJdRKlpgorWiin3uNtP7ZkdSB69DEScFK2FnN2-_AqJDhWFXh6bGS-iWrYj2TSZ3gl0XQVs66zZ426OkhbgLmGlUAMnbkHAHoLhfneWiq8VHM5Qe4HFXdIvBdXbuD8KB03YhFXa293prlwwpl88VJUIvF1AIWTtnSzqQ1sQpSwpbpFMraFMDRFN73C8XEljUleKWDQFxxeT5gJV072_CIXO1cZaU1wdK2sTPWzSdthSRf2bRemsbFLmKkIaWeotJOMRjuyvygqbzej2-FzOpBZVARx9Cw2RVKxJWZ06s86HBJLFUl6dXSwol3grGnfc3wF0EIemZCtTqiYFUprhbq9uG09vqEgL2cBn8b4TRKRf1wbaesiBkRxixhsSfH-GR89TQxgTkF-johK_rJawm15LuZGLJ-Ri0uYkgNQRoOCpY1mHb-KKgVPN5zK6G8YmmdnJm78KS50XZgRS3P12BA5Ok8TcVptT6iseMinXsd_QS_hYDSgo4FgiIoad120rK-yfjydnjQFUwGw-OlUOr9NdTFb0yscaG66MF1lxtsoKSVTK0JsUEuQgEjqtXnEd1w213UAs7K0aImqPW1rn6GsmX48gq4vCEksqsXMbzGGc0sEZuk0PGdYvjxKSvT7KyojSA58WHZ4r5pG-oJ72l1-CNdgDrGwmWK4hyh1QaixvKdOCZyhFwpaKZvr0lMPsllAI0DVDTFffbE1Vnfs5iILNEcCWUNMfYa0XMqYXfJISQTqVgaOjYZKnrgSRUmwsra1dAWkmQMOeji4-uVBJLZ0UhtC_CgvUXORNUZQ0f07OzxMFF9YcGGxomvEhV_Fcn8FxmoTqJeQc5O-MFBLpaKuvEklsIY1D04WpdveTSeYSn0ZXNQFHFJPkyR3SMLlDh4SQixgXU1XgIlYzrRh3m5fB9pPIqO1gXKzggFyYYi3sa1tJoK4ET1QKaz6xmMIoHVDH2fhDiNBap8xQnrx6zoUCVkOVUxyZ6yGSO2FY-R_azj7aTyIpqdEq5QWan6xkZ2YZianvzAJfRGD-exiDIF0TwlD9i0TU2q5LUpI1c0YHydMKXxic0qDilbcmEDOUW8Lx0wVhJeOd62fPm1ajKWumUcxt7ooKGsRuOziYRq6d081XOA3FGFcqjtwVvvlCgs7bSlAbW13gJ5u1ath3nNHBstTHZONlmeylR9Pa6uGr5BhPaWbJS9yPqH6zE8WtUdmH0TnMjReSLAJbk_x-gsxJkk2Y3JwQp6Xc-OoWPVHdhfMTSWshpdXpaIxaGmtoreZQB2EvwgDaSuL6Nl2N4ZbVCVswAMmbnqAO0Fz88g_JDVqMGFCQWe5iVjcr17xd2UV8GIGnKOLSJ-aKHpjrquRvHUJja4DOX0rktrndhqkaWs1bvcqMlVUhRNIT-vCAQk-YR1qQFJLhL9Y35lF42RELOhmO4WMpECvtRNrfa2wqJJuALilLBRuLJz5wVQSuWVJO0bTCTtQRJkUZHrP0z4XHXkUYkRyQpm_T8uORcJ2fhryajCypKZinqAie2SRsoeUSBqEpRwZcC2K__JeKLtFchJb1wMgbHW9DnJNzMsBEShVElttTGutmlXeglTCR3Qr-Gk7goGPdLO9FHtria2Ts08aooghCHwqvf_bZBWmZV04bfwmPk1XoRxGU9XoITQ-RhlcQXZaq6hc3ItS5nNGMOdgPJ2KjmuSoh9peqK1lq5eOo2aPgtFEL7A5EM0lmlTJV7rIR5IeIMMQ0rI-SM0HWQDe150X5-qWO6oR99nYy7GciaRg5dStJATWmKgjb2EQDiDqTcHeSu7yedWD7tQQSNL5gQVTGyoP1FX98QeNCFbH1JGTU6fj1DFrWnYU30F80Uhj6O3TL6mMGdDjLSvmHgAoaEUP24jnPXgZhSSXmwjbugEMWdRngxNW_jPARABWR5JbExMv7Zy54pgwWdAKdFmFZmdkXS-ug1CZYiLuKt9H5WpAA1bOZD_wWEelnhOH0LIIjZSTrwzUlrCwDEXMmIYWEVpWZ6cfeOCQPR_RSzpVgSvq6VnhaU_ZG2PkLirWCmiqjQ'
+        id: 6,
+        genres: [genres.action, genres.scienceFiction],
+        title: 'Avatar',
+        image: 'https://www.themoviedb.org/t/p/w600_and_h900_bestv2/jRXYjXNq0Cs2TcJjLkki24MLp7u.jpg',
+        ageLimit: 12,
+        rating: '7.9',
+        year: 2009,
+        description: 'In the 22nd century, a paraplegic Marine is dispatched to the moon Pandora on a unique mission, but becomes torn between following orders and protecting an alien civilization.'
       },
       {
-        title: 'Король Лев',
-        image: 'https://kinopoisk-ru.clstorage.net/1c64DB120/7497c7x4LqQ/zyAXFYjJskEJAhnszNDefmkJzYkDB1WfC9GoKBQ_I95xW4BKc9FEY7K0Tbt52I3OMj275xtepWOJ0FoTN2ZpgFlxQoJMWydA3oWfLE5RiizvShiYkFVADgyVf37D9O_UfdHcw_wbTGiq5d2qv0wamCIsLCUfyDanjEzVVuqzs9xJ7BlXgJe7wcbbFaoN0Np8ec-JzVqInR9cUWcl3bIhmLfZkcsxUEzpauoRZCLEHpcsrOzkE8YuZovKFwxn9zfUj6xVVMpROgaBHBEnyhha_HNJQQUex5-cnhosapJ4qNFwnRdL-xOHKCuj22ogDBpZa-PlZhoGqyrEQ9rCKrs8mUSvnVWNV_hAwdwaaMtT3vp-A00BFQNY1pxdISASeOZWcJmSw_bVgyciqpUj4AdZUaXuY-kYDibqCEDZT241Nt8GaRpaQJmxwkQUleINktE4MkDFCVrLmVBQ06jhX7WtVfSbFoN6m4PjraEcYiaEHVPka6Vs2AEsZYHD2YYueLpYzebZ2wUa-oXOF5EvyVsTvLbIiUjcAl6X0VKq6J4wYdR70FuIsxmJ5yRommchSFuTJO3u7VeDoSlLyd7CbrO41wXjkxqO2zsGDtDdZsSUVPpyyEUBlUwdU5SdaqGefWLRtBnXzXnfQSjh5lSv7QpS0KkqJSEVgyEuj46bz6gy91gM6dHdhJn7RoRSVS8Hk9v0fobFjtAHHZxa2avukf_lGDCakYy42YAj6yRebaQE21bv7SXp3o-o602L0Uog9_hZgmAb20JaukyLnN9nxtdefDsGT8pWRtqTWlDsZZn-6d641FCAs1MG4CJjnGWsTF0aIGMm5ldJ5i0AxZkH6DZ73A1tVJGHVnyODhBZ7QId2rb_T4ZBnYecWBBQYCASuixfPRLVAvzaxSRiodompIvZ3SjrJiJdRKlpgorWiin3uNtP7ZkdSB69DEScFK2FnN2-_AqJDhWFXh6bGS-iWrYj2TSZ3gl0XQVs66zZ426OkhbgLmGlUAMnbkHAHoLhfneWiq8VHM5Qe4HFXdIvBdXbuD8KB03YhFXa293prlwwpl88VJUIvF1AIWTtnSzqQ1sQpSwpbpFMraFMDRFN73C8XEljUleKWDQFxxeT5gJV072_CIXO1cZaU1wdK2sTPWzSdthSRf2bRemsbFLmKkIaWeotJOMRjuyvygqbzej2-FzOpBZVARx9Cw2RVKxJWZ06s86HBJLFUl6dXSwol3grGnfc3wF0EIemZCtTqiYFUprhbq9uG09vqEgL2cBn8b4TRKRf1wbaesiBkRxixhsSfH-GR89TQxgTkF-johK_rJawm15LuZGLJ-Ri0uYkgNQRoOCpY1mHb-KKgVPN5zK6G8YmmdnJm78KS50XZgRS3P12BA5Ok8TcVptT6iseMinXsd_QS_hYDSgo4FgiIoad120rK-yfjydnjQFUwGw-OlUOr9NdTFb0yscaG66MF1lxtsoKSVTK0JsUEuQgEjqtXnEd1w213UAs7K0aImqPW1rn6GsmX48gq4vCEksqsXMbzGGc0sEZuk0PGdYvjxKSvT7KyojSA58WHZ4r5pG-oJ72l1-CNdgDrGwmWK4hyh1QaixvKdOCZyhFwpaKZvr0lMPsllAI0DVDTFffbE1Vnfs5iILNEcCWUNMfYa0XMqYXfJISQTqVgaOjYZKnrgSRUmwsra1dAWkmQMOeji4-uVBJLZ0UhtC_CgvUXORNUZQ0f07OzxMFF9YcGGxomvEhV_Fcn8FxmoTqJeQc5O-MFBLpaKuvEklsIY1D04WpdveTSeYSn0ZXNQFHFJPkyR3SMLlDh4SQixgXU1XgIlYzrRh3m5fB9pPIqO1gXKzggFyYYi3sa1tJoK4ET1QKaz6xmMIoHVDH2fhDiNBap8xQnrx6zoUCVkOVUxyZ6yGSO2FY-R_azj7aTyIpqdEq5QWan6xkZ2YZianvzAJfRGD-exiDIF0TwlD9i0TU2q5LUpI1c0YHydMKXxic0qDilbcmEDOUW8Lx0wVhJeOd62fPm1ajKWumUcxt7ooKGsRuOziYRq6d081XOA3FGFcqjtwVvvlCgs7bSlAbW13gJ5u1ath3nNHBstTHZONlmeylR9Pa6uGr5BhPaWbJS9yPqH6zE8WtUdmH0TnMjReSLAJbk_x-gsxJkk2Y3JwQp6Xc-OoWPVHdhfMTSWshpdXpaIxaGmtoreZQB2EvwgDaSuL6Nl2N4ZbVCVswAMmbnqAO0Fz88g_JDVqMGFCQWe5iVjcr17xd2UV8GIGnKOLSJ-aKHpjrquRvHUJja4DOX0rktrndhqkaWs1bvcqMlVUhRNIT-vCAQk-YR1qQFJLhL9Y35lF42RELOhmO4WMpECvtRNrfa2wqJJuALilLBRuLJz5wVQSuWVJO0bTCTtQRJkUZHrP0z4XHXkUYkRyQpm_T8uORcJ2fhryajCypKZinqAie2SRsoeUSBqEpRwZcC2K__JeKLtFchJb1wMgbHW9DnJNzMsBEShVElttTGutmlXeglTCR3Qr-Gk7goGPdLO9FHtria2Ts08aooghCHwqvf_bZBWmZV04bfwmPk1XoRxGU9XoITQ-RhlcQXZaq6hc3ItS5nNGMOdgPJ2KjmuSoh9peqK1lq5eOo2aPgtFEL7A5EM0lmlTJV7rIR5IeIMMQ0rI-SM0HWQDe150X5-qWO6oR99nYy7GciaRg5dStJATWmKgjb2EQDiDqTcHeSu7yedWD7tQQSNL5gQVTGyoP1FX98QeNCFbH1JGTU6fj1DFrWnYU30F80Uhj6O3TL6mMGdDjLSvmHgAoaEUP24jnPXgZhSSXmwjbugEMWdRngxNW_jPARABWR5JbExMv7Zy54pgwWdAKdFmFZmdkXS-ug1CZYiLuKt9H5WpAA1bOZD_wWEelnhOH0LIIjZSTrwzUlrCwDEXMmIYWEVpWZ6cfeOCQPR_RSzpVgSvq6VnhaU_ZG2PkLirWCmiqjQ'
+        id: 7,
+        genres: [genres.action, genres.scienceFiction],
+        title: 'Avatar',
+        image: 'https://www.themoviedb.org/t/p/w600_and_h900_bestv2/jRXYjXNq0Cs2TcJjLkki24MLp7u.jpg',
+        ageLimit: 12,
+        rating: '7.9',
+        year: 2009,
+        description: 'In the 22nd century, a paraplegic Marine is dispatched to the moon Pandora on a unique mission, but becomes torn between following orders and protecting an alien civilization.'
       },
     ],
     series: [
       {
-        title: 'Во все тяжкие',
-        image: 'https://kinopoisk-ru.clstorage.net/1c64DB120/7497c7x4LqQ/zyAXFYjJskEJAhnszNDefmkJzYkDB1WfC9GoKBQ_I95xW4BKc9FEY7K0Tjt42w7Nsimvc45f8XaIkE5GdjJpgE_zQsJMmuSVXpFeORkFS_nsyxgYhpVADgyVf37D9O_UfdHcw_wbTGiq5d2qv0wamCIsLCUfyDanjEzVVuqzs9xJ7BlXgJe7wcbbFaoN0Np8ec-JzVqInR9cUWcl3bIhmLfZkcsxUEzpauoRZCLEHpcsrOzkE8YuZovKFwxn9zfUj6xVVMpROgaBHBEnyhha_HNJQQUex5-cnhosapJ4qNFwnRdL-xOHKCuj22ogDBpZa-PlZhoGqyrEQ9rCKrs8mUSvnVWNV_hAwdwaaMtT3vp-A00BFQNY1pxdISASeOZWcJmSw_bVgyciqpUj4AdZUaXuY-kYDibqCEDZT241Nt8GaRpaQJmxwkQUleINktE4MkDFCVrLmVBQ06jhX7WtVfSbFoN6m4PjraEcYiaEHVPka6Vs2AEsZYHD2YYueLpYzebZ2wUa-oXOF5EvyVsTvLbIiUjcAl6X0VKq6J4wYdR70FuIsxmJ5yRommchSFuTJO3u7VeDoSlLyd7CbrO41wXjkxqO2zsGDtDdZsSUVPpyyEUBlUwdU5SdaqGefWLRtBnXzXnfQSjh5lSv7QpS0KkqJSEVgyEuj46bz6gy91gM6dHdhJn7RoRSVS8Hk9v0fobFjtAHHZxa2avukf_lGDCakYy42YAj6yRebaQE21bv7SXp3o-o602L0Uog9_hZgmAb20JaukyLnN9nxtdefDsGT8pWRtqTWlDsZZn-6d641FCAs1MG4CJjnGWsTF0aIGMm5ldJ5i0AxZkH6DZ73A1tVJGHVnyODhBZ7QId2rb_T4ZBnYecWBBQYCASuixfPRLVAvzaxSRiodompIvZ3SjrJiJdRKlpgorWiin3uNtP7ZkdSB69DEScFK2FnN2-_AqJDhWFXh6bGS-iWrYj2TSZ3gl0XQVs66zZ426OkhbgLmGlUAMnbkHAHoLhfneWiq8VHM5Qe4HFXdIvBdXbuD8KB03YhFXa293prlwwpl88VJUIvF1AIWTtnSzqQ1sQpSwpbpFMraFMDRFN73C8XEljUleKWDQFxxeT5gJV072_CIXO1cZaU1wdK2sTPWzSdthSRf2bRemsbFLmKkIaWeotJOMRjuyvygqbzej2-FzOpBZVARx9Cw2RVKxJWZ06s86HBJLFUl6dXSwol3grGnfc3wF0EIemZCtTqiYFUprhbq9uG09vqEgL2cBn8b4TRKRf1wbaesiBkRxixhsSfH-GR89TQxgTkF-johK_rJawm15LuZGLJ-Ri0uYkgNQRoOCpY1mHb-KKgVPN5zK6G8YmmdnJm78KS50XZgRS3P12BA5Ok8TcVptT6iseMinXsd_QS_hYDSgo4FgiIoad120rK-yfjydnjQFUwGw-OlUOr9NdTFb0yscaG66MF1lxtsoKSVTK0JsUEuQgEjqtXnEd1w213UAs7K0aImqPW1rn6GsmX48gq4vCEksqsXMbzGGc0sEZuk0PGdYvjxKSvT7KyojSA58WHZ4r5pG-oJ72l1-CNdgDrGwmWK4hyh1QaixvKdOCZyhFwpaKZvr0lMPsllAI0DVDTFffbE1Vnfs5iILNEcCWUNMfYa0XMqYXfJISQTqVgaOjYZKnrgSRUmwsra1dAWkmQMOeji4-uVBJLZ0UhtC_CgvUXORNUZQ0f07OzxMFF9YcGGxomvEhV_Fcn8FxmoTqJeQc5O-MFBLpaKuvEklsIY1D04WpdveTSeYSn0ZXNQFHFJPkyR3SMLlDh4SQixgXU1XgIlYzrRh3m5fB9pPIqO1gXKzggFyYYi3sa1tJoK4ET1QKaz6xmMIoHVDH2fhDiNBap8xQnrx6zoUCVkOVUxyZ6yGSO2FY-R_azj7aTyIpqdEq5QWan6xkZ2YZianvzAJfRGD-exiDIF0TwlD9i0TU2q5LUpI1c0YHydMKXxic0qDilbcmEDOUW8Lx0wVhJeOd62fPm1ajKWumUcxt7ooKGsRuOziYRq6d081XOA3FGFcqjtwVvvlCgs7bSlAbW13gJ5u1ath3nNHBstTHZONlmeylR9Pa6uGr5BhPaWbJS9yPqH6zE8WtUdmH0TnMjReSLAJbk_x-gsxJkk2Y3JwQp6Xc-OoWPVHdhfMTSWshpdXpaIxaGmtoreZQB2EvwgDaSuL6Nl2N4ZbVCVswAMmbnqAO0Fz88g_JDVqMGFCQWe5iVjcr17xd2UV8GIGnKOLSJ-aKHpjrquRvHUJja4DOX0rktrndhqkaWs1bvcqMlVUhRNIT-vCAQk-YR1qQFJLhL9Y35lF42RELOhmO4WMpECvtRNrfa2wqJJuALilLBRuLJz5wVQSuWVJO0bTCTtQRJkUZHrP0z4XHXkUYkRyQpm_T8uORcJ2fhryajCypKZinqAie2SRsoeUSBqEpRwZcC2K__JeKLtFchJb1wMgbHW9DnJNzMsBEShVElttTGutmlXeglTCR3Qr-Gk7goGPdLO9FHtria2Ts08aooghCHwqvf_bZBWmZV04bfwmPk1XoRxGU9XoITQ-RhlcQXZaq6hc3ItS5nNGMOdgPJ2KjmuSoh9peqK1lq5eOo2aPgtFEL7A5EM0lmlTJV7rIR5IeIMMQ0rI-SM0HWQDe150X5-qWO6oR99nYy7GciaRg5dStJATWmKgjb2EQDiDqTcHeSu7yedWD7tQQSNL5gQVTGyoP1FX98QeNCFbH1JGTU6fj1DFrWnYU30F80Uhj6O3TL6mMGdDjLSvmHgAoaEUP24jnPXgZhSSXmwjbugEMWdRngxNW_jPARABWR5JbExMv7Zy54pgwWdAKdFmFZmdkXS-ug1CZYiLuKt9H5WpAA1bOZD_wWEelnhOH0LIIjZSTrwzUlrCwDEXMmIYWEVpWZ6cfeOCQPR_RSzpVgSvq6VnhaU_ZG2PkLirWCmiqjQ#DSD'
+        id: 1,
+        genres: [genres.drama],
+        title: 'Breaking Bad',
+        image: 'https://www.themoviedb.org/t/p/w600_and_h900_bestv2/ggFHVNu6YYI5L9pCfOacjizRGt.jpg',
+        ageLimit: 18,
+        rating: '8.9',
+        year: 2008,
+        description: 'When Walter White, a New Mexico chemistry teacher, is diagnosed with Stage III cancer and given a prognosis of only two years left to live. He becomes filled with a sense of fearlessness and an unrelenting desire to secure his family\'s financial future at any cost as he enters the dangerous world of drugs and crime.'
       },
       {
-        title: 'Футурама',
-        image: 'https://kinopoisk-ru.clstorage.net/1c64DB120/7497c7x4LqQ/zyAXFYjJskEJAhnszNDefmkJzYkDB1WfC9GoKBQ_I95xW4BKc9FEY7K0Tbq5Gw1O8j065g4KcfYcUE4TtidpgFlkgQJMWnCUXpEKbdqHi25uH5qNBVVADgyVf37D9O_UfdHcw_wbTGiq5d2qv0wamCIsLCUfyDanjEzVVuqzs9xJ7BlXgJe7wcbbFaoN0Np8ec-JzVqInR9cUWcl3bIhmLfZkcsxUEzpauoRZCLEHpcsrOzkE8YuZovKFwxn9zfUj6xVVMpROgaBHBEnyhha_HNJQQUex5-cnhosapJ4qNFwnRdL-xOHKCuj22ogDBpZa-PlZhoGqyrEQ9rCKrs8mUSvnVWNV_hAwdwaaMtT3vp-A00BFQNY1pxdISASeOZWcJmSw_bVgyciqpUj4AdZUaXuY-kYDibqCEDZT241Nt8GaRpaQJmxwkQUleINktE4MkDFCVrLmVBQ06jhX7WtVfSbFoN6m4PjraEcYiaEHVPka6Vs2AEsZYHD2YYueLpYzebZ2wUa-oXOF5EvyVsTvLbIiUjcAl6X0VKq6J4wYdR70FuIsxmJ5yRommchSFuTJO3u7VeDoSlLyd7CbrO41wXjkxqO2zsGDtDdZsSUVPpyyEUBlUwdU5SdaqGefWLRtBnXzXnfQSjh5lSv7QpS0KkqJSEVgyEuj46bz6gy91gM6dHdhJn7RoRSVS8Hk9v0fobFjtAHHZxa2avukf_lGDCakYy42YAj6yRebaQE21bv7SXp3o-o602L0Uog9_hZgmAb20JaukyLnN9nxtdefDsGT8pWRtqTWlDsZZn-6d641FCAs1MG4CJjnGWsTF0aIGMm5ldJ5i0AxZkH6DZ73A1tVJGHVnyODhBZ7QId2rb_T4ZBnYecWBBQYCASuixfPRLVAvzaxSRiodompIvZ3SjrJiJdRKlpgorWiin3uNtP7ZkdSB69DEScFK2FnN2-_AqJDhWFXh6bGS-iWrYj2TSZ3gl0XQVs66zZ426OkhbgLmGlUAMnbkHAHoLhfneWiq8VHM5Qe4HFXdIvBdXbuD8KB03YhFXa293prlwwpl88VJUIvF1AIWTtnSzqQ1sQpSwpbpFMraFMDRFN73C8XEljUleKWDQFxxeT5gJV072_CIXO1cZaU1wdK2sTPWzSdthSRf2bRemsbFLmKkIaWeotJOMRjuyvygqbzej2-FzOpBZVARx9Cw2RVKxJWZ06s86HBJLFUl6dXSwol3grGnfc3wF0EIemZCtTqiYFUprhbq9uG09vqEgL2cBn8b4TRKRf1wbaesiBkRxixhsSfH-GR89TQxgTkF-johK_rJawm15LuZGLJ-Ri0uYkgNQRoOCpY1mHb-KKgVPN5zK6G8YmmdnJm78KS50XZgRS3P12BA5Ok8TcVptT6iseMinXsd_QS_hYDSgo4FgiIoad120rK-yfjydnjQFUwGw-OlUOr9NdTFb0yscaG66MF1lxtsoKSVTK0JsUEuQgEjqtXnEd1w213UAs7K0aImqPW1rn6GsmX48gq4vCEksqsXMbzGGc0sEZuk0PGdYvjxKSvT7KyojSA58WHZ4r5pG-oJ72l1-CNdgDrGwmWK4hyh1QaixvKdOCZyhFwpaKZvr0lMPsllAI0DVDTFffbE1Vnfs5iILNEcCWUNMfYa0XMqYXfJISQTqVgaOjYZKnrgSRUmwsra1dAWkmQMOeji4-uVBJLZ0UhtC_CgvUXORNUZQ0f07OzxMFF9YcGGxomvEhV_Fcn8FxmoTqJeQc5O-MFBLpaKuvEklsIY1D04WpdveTSeYSn0ZXNQFHFJPkyR3SMLlDh4SQixgXU1XgIlYzrRh3m5fB9pPIqO1gXKzggFyYYi3sa1tJoK4ET1QKaz6xmMIoHVDH2fhDiNBap8xQnrx6zoUCVkOVUxyZ6yGSO2FY-R_azj7aTyIpqdEq5QWan6xkZ2YZianvzAJfRGD-exiDIF0TwlD9i0TU2q5LUpI1c0YHydMKXxic0qDilbcmEDOUW8Lx0wVhJeOd62fPm1ajKWumUcxt7ooKGsRuOziYRq6d081XOA3FGFcqjtwVvvlCgs7bSlAbW13gJ5u1ath3nNHBstTHZONlmeylR9Pa6uGr5BhPaWbJS9yPqH6zE8WtUdmH0TnMjReSLAJbk_x-gsxJkk2Y3JwQp6Xc-OoWPVHdhfMTSWshpdXpaIxaGmtoreZQB2EvwgDaSuL6Nl2N4ZbVCVswAMmbnqAO0Fz88g_JDVqMGFCQWe5iVjcr17xd2UV8GIGnKOLSJ-aKHpjrquRvHUJja4DOX0rktrndhqkaWs1bvcqMlVUhRNIT-vCAQk-YR1qQFJLhL9Y35lF42RELOhmO4WMpECvtRNrfa2wqJJuALilLBRuLJz5wVQSuWVJO0bTCTtQRJkUZHrP0z4XHXkUYkRyQpm_T8uORcJ2fhryajCypKZinqAie2SRsoeUSBqEpRwZcC2K__JeKLtFchJb1wMgbHW9DnJNzMsBEShVElttTGutmlXeglTCR3Qr-Gk7goGPdLO9FHtria2Ts08aooghCHwqvf_bZBWmZV04bfwmPk1XoRxGU9XoITQ-RhlcQXZaq6hc3ItS5nNGMOdgPJ2KjmuSoh9peqK1lq5eOo2aPgtFEL7A5EM0lmlTJV7rIR5IeIMMQ0rI-SM0HWQDe150X5-qWO6oR99nYy7GciaRg5dStJATWmKgjb2EQDiDqTcHeSu7yedWD7tQQSNL5gQVTGyoP1FX98QeNCFbH1JGTU6fj1DFrWnYU30F80Uhj6O3TL6mMGdDjLSvmHgAoaEUP24jnPXgZhSSXmwjbugEMWdRngxNW_jPARABWR5JbExMv7Zy54pgwWdAKdFmFZmdkXS-ug1CZYiLuKt9H5WpAA1bOZD_wWEelnhOH0LIIjZSTrwzUlrCwDEXMmIYWEVpWZ6cfeOCQPR_RSzpVgSvq6VnhaU_ZG2PkLirWCmiqjQ#DSD'
+        id: 2,
+        genres: [genres.drama],
+        title: 'Breaking Bad',
+        image: 'https://www.themoviedb.org/t/p/w600_and_h900_bestv2/ggFHVNu6YYI5L9pCfOacjizRGt.jpg',
+        ageLimit: 18,
+        rating: '8.9',
+        year: 2008,
+        description: 'When Walter White, a New Mexico chemistry teacher, is diagnosed with Stage III cancer and given a prognosis of only two years left to live. He becomes filled with a sense of fearlessness and an unrelenting desire to secure his family\'s financial future at any cost as he enters the dangerous world of drugs and crime.'
       },
       {
-        title: 'Во все тяжкие',
-        image: 'https://kinopoisk-ru.clstorage.net/1c64DB120/7497c7x4LqQ/zyAXFYjJskEJAhnszNDefmkJzYkDB1WfC9GoKBQ_I95xW4BKc9FEY7K0Tjt42w7Nsimvc45f8XaIkE5GdjJpgE_zQsJMmuSVXpFeORkFS_nsyxgYhpVADgyVf37D9O_UfdHcw_wbTGiq5d2qv0wamCIsLCUfyDanjEzVVuqzs9xJ7BlXgJe7wcbbFaoN0Np8ec-JzVqInR9cUWcl3bIhmLfZkcsxUEzpauoRZCLEHpcsrOzkE8YuZovKFwxn9zfUj6xVVMpROgaBHBEnyhha_HNJQQUex5-cnhosapJ4qNFwnRdL-xOHKCuj22ogDBpZa-PlZhoGqyrEQ9rCKrs8mUSvnVWNV_hAwdwaaMtT3vp-A00BFQNY1pxdISASeOZWcJmSw_bVgyciqpUj4AdZUaXuY-kYDibqCEDZT241Nt8GaRpaQJmxwkQUleINktE4MkDFCVrLmVBQ06jhX7WtVfSbFoN6m4PjraEcYiaEHVPka6Vs2AEsZYHD2YYueLpYzebZ2wUa-oXOF5EvyVsTvLbIiUjcAl6X0VKq6J4wYdR70FuIsxmJ5yRommchSFuTJO3u7VeDoSlLyd7CbrO41wXjkxqO2zsGDtDdZsSUVPpyyEUBlUwdU5SdaqGefWLRtBnXzXnfQSjh5lSv7QpS0KkqJSEVgyEuj46bz6gy91gM6dHdhJn7RoRSVS8Hk9v0fobFjtAHHZxa2avukf_lGDCakYy42YAj6yRebaQE21bv7SXp3o-o602L0Uog9_hZgmAb20JaukyLnN9nxtdefDsGT8pWRtqTWlDsZZn-6d641FCAs1MG4CJjnGWsTF0aIGMm5ldJ5i0AxZkH6DZ73A1tVJGHVnyODhBZ7QId2rb_T4ZBnYecWBBQYCASuixfPRLVAvzaxSRiodompIvZ3SjrJiJdRKlpgorWiin3uNtP7ZkdSB69DEScFK2FnN2-_AqJDhWFXh6bGS-iWrYj2TSZ3gl0XQVs66zZ426OkhbgLmGlUAMnbkHAHoLhfneWiq8VHM5Qe4HFXdIvBdXbuD8KB03YhFXa293prlwwpl88VJUIvF1AIWTtnSzqQ1sQpSwpbpFMraFMDRFN73C8XEljUleKWDQFxxeT5gJV072_CIXO1cZaU1wdK2sTPWzSdthSRf2bRemsbFLmKkIaWeotJOMRjuyvygqbzej2-FzOpBZVARx9Cw2RVKxJWZ06s86HBJLFUl6dXSwol3grGnfc3wF0EIemZCtTqiYFUprhbq9uG09vqEgL2cBn8b4TRKRf1wbaesiBkRxixhsSfH-GR89TQxgTkF-johK_rJawm15LuZGLJ-Ri0uYkgNQRoOCpY1mHb-KKgVPN5zK6G8YmmdnJm78KS50XZgRS3P12BA5Ok8TcVptT6iseMinXsd_QS_hYDSgo4FgiIoad120rK-yfjydnjQFUwGw-OlUOr9NdTFb0yscaG66MF1lxtsoKSVTK0JsUEuQgEjqtXnEd1w213UAs7K0aImqPW1rn6GsmX48gq4vCEksqsXMbzGGc0sEZuk0PGdYvjxKSvT7KyojSA58WHZ4r5pG-oJ72l1-CNdgDrGwmWK4hyh1QaixvKdOCZyhFwpaKZvr0lMPsllAI0DVDTFffbE1Vnfs5iILNEcCWUNMfYa0XMqYXfJISQTqVgaOjYZKnrgSRUmwsra1dAWkmQMOeji4-uVBJLZ0UhtC_CgvUXORNUZQ0f07OzxMFF9YcGGxomvEhV_Fcn8FxmoTqJeQc5O-MFBLpaKuvEklsIY1D04WpdveTSeYSn0ZXNQFHFJPkyR3SMLlDh4SQixgXU1XgIlYzrRh3m5fB9pPIqO1gXKzggFyYYi3sa1tJoK4ET1QKaz6xmMIoHVDH2fhDiNBap8xQnrx6zoUCVkOVUxyZ6yGSO2FY-R_azj7aTyIpqdEq5QWan6xkZ2YZianvzAJfRGD-exiDIF0TwlD9i0TU2q5LUpI1c0YHydMKXxic0qDilbcmEDOUW8Lx0wVhJeOd62fPm1ajKWumUcxt7ooKGsRuOziYRq6d081XOA3FGFcqjtwVvvlCgs7bSlAbW13gJ5u1ath3nNHBstTHZONlmeylR9Pa6uGr5BhPaWbJS9yPqH6zE8WtUdmH0TnMjReSLAJbk_x-gsxJkk2Y3JwQp6Xc-OoWPVHdhfMTSWshpdXpaIxaGmtoreZQB2EvwgDaSuL6Nl2N4ZbVCVswAMmbnqAO0Fz88g_JDVqMGFCQWe5iVjcr17xd2UV8GIGnKOLSJ-aKHpjrquRvHUJja4DOX0rktrndhqkaWs1bvcqMlVUhRNIT-vCAQk-YR1qQFJLhL9Y35lF42RELOhmO4WMpECvtRNrfa2wqJJuALilLBRuLJz5wVQSuWVJO0bTCTtQRJkUZHrP0z4XHXkUYkRyQpm_T8uORcJ2fhryajCypKZinqAie2SRsoeUSBqEpRwZcC2K__JeKLtFchJb1wMgbHW9DnJNzMsBEShVElttTGutmlXeglTCR3Qr-Gk7goGPdLO9FHtria2Ts08aooghCHwqvf_bZBWmZV04bfwmPk1XoRxGU9XoITQ-RhlcQXZaq6hc3ItS5nNGMOdgPJ2KjmuSoh9peqK1lq5eOo2aPgtFEL7A5EM0lmlTJV7rIR5IeIMMQ0rI-SM0HWQDe150X5-qWO6oR99nYy7GciaRg5dStJATWmKgjb2EQDiDqTcHeSu7yedWD7tQQSNL5gQVTGyoP1FX98QeNCFbH1JGTU6fj1DFrWnYU30F80Uhj6O3TL6mMGdDjLSvmHgAoaEUP24jnPXgZhSSXmwjbugEMWdRngxNW_jPARABWR5JbExMv7Zy54pgwWdAKdFmFZmdkXS-ug1CZYiLuKt9H5WpAA1bOZD_wWEelnhOH0LIIjZSTrwzUlrCwDEXMmIYWEVpWZ6cfeOCQPR_RSzpVgSvq6VnhaU_ZG2PkLirWCmiqjQ#DSD'
+        id: 3,
+        genres: [genres.drama],
+        title: 'Breaking Bad',
+        image: 'https://www.themoviedb.org/t/p/w600_and_h900_bestv2/ggFHVNu6YYI5L9pCfOacjizRGt.jpg',
+        ageLimit: 18,
+        rating: '8.9',
+        year: 2008,
+        description: 'When Walter White, a New Mexico chemistry teacher, is diagnosed with Stage III cancer and given a prognosis of only two years left to live. He becomes filled with a sense of fearlessness and an unrelenting desire to secure his family\'s financial future at any cost as he enters the dangerous world of drugs and crime.'
       },
       {
-        title: 'Футурама',
-        image: 'https://kinopoisk-ru.clstorage.net/1c64DB120/7497c7x4LqQ/zyAXFYjJskEJAhnszNDefmkJzYkDB1WfC9GoKBQ_I95xW4BKc9FEY7K0Tbq5Gw1O8j065g4KcfYcUE4TtidpgFlkgQJMWnCUXpEKbdqHi25uH5qNBVVADgyVf37D9O_UfdHcw_wbTGiq5d2qv0wamCIsLCUfyDanjEzVVuqzs9xJ7BlXgJe7wcbbFaoN0Np8ec-JzVqInR9cUWcl3bIhmLfZkcsxUEzpauoRZCLEHpcsrOzkE8YuZovKFwxn9zfUj6xVVMpROgaBHBEnyhha_HNJQQUex5-cnhosapJ4qNFwnRdL-xOHKCuj22ogDBpZa-PlZhoGqyrEQ9rCKrs8mUSvnVWNV_hAwdwaaMtT3vp-A00BFQNY1pxdISASeOZWcJmSw_bVgyciqpUj4AdZUaXuY-kYDibqCEDZT241Nt8GaRpaQJmxwkQUleINktE4MkDFCVrLmVBQ06jhX7WtVfSbFoN6m4PjraEcYiaEHVPka6Vs2AEsZYHD2YYueLpYzebZ2wUa-oXOF5EvyVsTvLbIiUjcAl6X0VKq6J4wYdR70FuIsxmJ5yRommchSFuTJO3u7VeDoSlLyd7CbrO41wXjkxqO2zsGDtDdZsSUVPpyyEUBlUwdU5SdaqGefWLRtBnXzXnfQSjh5lSv7QpS0KkqJSEVgyEuj46bz6gy91gM6dHdhJn7RoRSVS8Hk9v0fobFjtAHHZxa2avukf_lGDCakYy42YAj6yRebaQE21bv7SXp3o-o602L0Uog9_hZgmAb20JaukyLnN9nxtdefDsGT8pWRtqTWlDsZZn-6d641FCAs1MG4CJjnGWsTF0aIGMm5ldJ5i0AxZkH6DZ73A1tVJGHVnyODhBZ7QId2rb_T4ZBnYecWBBQYCASuixfPRLVAvzaxSRiodompIvZ3SjrJiJdRKlpgorWiin3uNtP7ZkdSB69DEScFK2FnN2-_AqJDhWFXh6bGS-iWrYj2TSZ3gl0XQVs66zZ426OkhbgLmGlUAMnbkHAHoLhfneWiq8VHM5Qe4HFXdIvBdXbuD8KB03YhFXa293prlwwpl88VJUIvF1AIWTtnSzqQ1sQpSwpbpFMraFMDRFN73C8XEljUleKWDQFxxeT5gJV072_CIXO1cZaU1wdK2sTPWzSdthSRf2bRemsbFLmKkIaWeotJOMRjuyvygqbzej2-FzOpBZVARx9Cw2RVKxJWZ06s86HBJLFUl6dXSwol3grGnfc3wF0EIemZCtTqiYFUprhbq9uG09vqEgL2cBn8b4TRKRf1wbaesiBkRxixhsSfH-GR89TQxgTkF-johK_rJawm15LuZGLJ-Ri0uYkgNQRoOCpY1mHb-KKgVPN5zK6G8YmmdnJm78KS50XZgRS3P12BA5Ok8TcVptT6iseMinXsd_QS_hYDSgo4FgiIoad120rK-yfjydnjQFUwGw-OlUOr9NdTFb0yscaG66MF1lxtsoKSVTK0JsUEuQgEjqtXnEd1w213UAs7K0aImqPW1rn6GsmX48gq4vCEksqsXMbzGGc0sEZuk0PGdYvjxKSvT7KyojSA58WHZ4r5pG-oJ72l1-CNdgDrGwmWK4hyh1QaixvKdOCZyhFwpaKZvr0lMPsllAI0DVDTFffbE1Vnfs5iILNEcCWUNMfYa0XMqYXfJISQTqVgaOjYZKnrgSRUmwsra1dAWkmQMOeji4-uVBJLZ0UhtC_CgvUXORNUZQ0f07OzxMFF9YcGGxomvEhV_Fcn8FxmoTqJeQc5O-MFBLpaKuvEklsIY1D04WpdveTSeYSn0ZXNQFHFJPkyR3SMLlDh4SQixgXU1XgIlYzrRh3m5fB9pPIqO1gXKzggFyYYi3sa1tJoK4ET1QKaz6xmMIoHVDH2fhDiNBap8xQnrx6zoUCVkOVUxyZ6yGSO2FY-R_azj7aTyIpqdEq5QWan6xkZ2YZianvzAJfRGD-exiDIF0TwlD9i0TU2q5LUpI1c0YHydMKXxic0qDilbcmEDOUW8Lx0wVhJeOd62fPm1ajKWumUcxt7ooKGsRuOziYRq6d081XOA3FGFcqjtwVvvlCgs7bSlAbW13gJ5u1ath3nNHBstTHZONlmeylR9Pa6uGr5BhPaWbJS9yPqH6zE8WtUdmH0TnMjReSLAJbk_x-gsxJkk2Y3JwQp6Xc-OoWPVHdhfMTSWshpdXpaIxaGmtoreZQB2EvwgDaSuL6Nl2N4ZbVCVswAMmbnqAO0Fz88g_JDVqMGFCQWe5iVjcr17xd2UV8GIGnKOLSJ-aKHpjrquRvHUJja4DOX0rktrndhqkaWs1bvcqMlVUhRNIT-vCAQk-YR1qQFJLhL9Y35lF42RELOhmO4WMpECvtRNrfa2wqJJuALilLBRuLJz5wVQSuWVJO0bTCTtQRJkUZHrP0z4XHXkUYkRyQpm_T8uORcJ2fhryajCypKZinqAie2SRsoeUSBqEpRwZcC2K__JeKLtFchJb1wMgbHW9DnJNzMsBEShVElttTGutmlXeglTCR3Qr-Gk7goGPdLO9FHtria2Ts08aooghCHwqvf_bZBWmZV04bfwmPk1XoRxGU9XoITQ-RhlcQXZaq6hc3ItS5nNGMOdgPJ2KjmuSoh9peqK1lq5eOo2aPgtFEL7A5EM0lmlTJV7rIR5IeIMMQ0rI-SM0HWQDe150X5-qWO6oR99nYy7GciaRg5dStJATWmKgjb2EQDiDqTcHeSu7yedWD7tQQSNL5gQVTGyoP1FX98QeNCFbH1JGTU6fj1DFrWnYU30F80Uhj6O3TL6mMGdDjLSvmHgAoaEUP24jnPXgZhSSXmwjbugEMWdRngxNW_jPARABWR5JbExMv7Zy54pgwWdAKdFmFZmdkXS-ug1CZYiLuKt9H5WpAA1bOZD_wWEelnhOH0LIIjZSTrwzUlrCwDEXMmIYWEVpWZ6cfeOCQPR_RSzpVgSvq6VnhaU_ZG2PkLirWCmiqjQ#DSD'
+        id: 4,
+        genres: [genres.drama],
+        title: 'Breaking Bad',
+        image: 'https://www.themoviedb.org/t/p/w600_and_h900_bestv2/ggFHVNu6YYI5L9pCfOacjizRGt.jpg',
+        ageLimit: 18,
+        rating: '8.9',
+        year: 2008,
+        description: 'When Walter White, a New Mexico chemistry teacher, is diagnosed with Stage III cancer and given a prognosis of only two years left to live. He becomes filled with a sense of fearlessness and an unrelenting desire to secure his family\'s financial future at any cost as he enters the dangerous world of drugs and crime.'
       },
       {
-        title: 'Во все тяжкие',
-        image: 'https://kinopoisk-ru.clstorage.net/1c64DB120/7497c7x4LqQ/zyAXFYjJskEJAhnszNDefmkJzYkDB1WfC9GoKBQ_I95xW4BKc9FEY7K0Tjt42w7Nsimvc45f8XaIkE5GdjJpgE_zQsJMmuSVXpFeORkFS_nsyxgYhpVADgyVf37D9O_UfdHcw_wbTGiq5d2qv0wamCIsLCUfyDanjEzVVuqzs9xJ7BlXgJe7wcbbFaoN0Np8ec-JzVqInR9cUWcl3bIhmLfZkcsxUEzpauoRZCLEHpcsrOzkE8YuZovKFwxn9zfUj6xVVMpROgaBHBEnyhha_HNJQQUex5-cnhosapJ4qNFwnRdL-xOHKCuj22ogDBpZa-PlZhoGqyrEQ9rCKrs8mUSvnVWNV_hAwdwaaMtT3vp-A00BFQNY1pxdISASeOZWcJmSw_bVgyciqpUj4AdZUaXuY-kYDibqCEDZT241Nt8GaRpaQJmxwkQUleINktE4MkDFCVrLmVBQ06jhX7WtVfSbFoN6m4PjraEcYiaEHVPka6Vs2AEsZYHD2YYueLpYzebZ2wUa-oXOF5EvyVsTvLbIiUjcAl6X0VKq6J4wYdR70FuIsxmJ5yRommchSFuTJO3u7VeDoSlLyd7CbrO41wXjkxqO2zsGDtDdZsSUVPpyyEUBlUwdU5SdaqGefWLRtBnXzXnfQSjh5lSv7QpS0KkqJSEVgyEuj46bz6gy91gM6dHdhJn7RoRSVS8Hk9v0fobFjtAHHZxa2avukf_lGDCakYy42YAj6yRebaQE21bv7SXp3o-o602L0Uog9_hZgmAb20JaukyLnN9nxtdefDsGT8pWRtqTWlDsZZn-6d641FCAs1MG4CJjnGWsTF0aIGMm5ldJ5i0AxZkH6DZ73A1tVJGHVnyODhBZ7QId2rb_T4ZBnYecWBBQYCASuixfPRLVAvzaxSRiodompIvZ3SjrJiJdRKlpgorWiin3uNtP7ZkdSB69DEScFK2FnN2-_AqJDhWFXh6bGS-iWrYj2TSZ3gl0XQVs66zZ426OkhbgLmGlUAMnbkHAHoLhfneWiq8VHM5Qe4HFXdIvBdXbuD8KB03YhFXa293prlwwpl88VJUIvF1AIWTtnSzqQ1sQpSwpbpFMraFMDRFN73C8XEljUleKWDQFxxeT5gJV072_CIXO1cZaU1wdK2sTPWzSdthSRf2bRemsbFLmKkIaWeotJOMRjuyvygqbzej2-FzOpBZVARx9Cw2RVKxJWZ06s86HBJLFUl6dXSwol3grGnfc3wF0EIemZCtTqiYFUprhbq9uG09vqEgL2cBn8b4TRKRf1wbaesiBkRxixhsSfH-GR89TQxgTkF-johK_rJawm15LuZGLJ-Ri0uYkgNQRoOCpY1mHb-KKgVPN5zK6G8YmmdnJm78KS50XZgRS3P12BA5Ok8TcVptT6iseMinXsd_QS_hYDSgo4FgiIoad120rK-yfjydnjQFUwGw-OlUOr9NdTFb0yscaG66MF1lxtsoKSVTK0JsUEuQgEjqtXnEd1w213UAs7K0aImqPW1rn6GsmX48gq4vCEksqsXMbzGGc0sEZuk0PGdYvjxKSvT7KyojSA58WHZ4r5pG-oJ72l1-CNdgDrGwmWK4hyh1QaixvKdOCZyhFwpaKZvr0lMPsllAI0DVDTFffbE1Vnfs5iILNEcCWUNMfYa0XMqYXfJISQTqVgaOjYZKnrgSRUmwsra1dAWkmQMOeji4-uVBJLZ0UhtC_CgvUXORNUZQ0f07OzxMFF9YcGGxomvEhV_Fcn8FxmoTqJeQc5O-MFBLpaKuvEklsIY1D04WpdveTSeYSn0ZXNQFHFJPkyR3SMLlDh4SQixgXU1XgIlYzrRh3m5fB9pPIqO1gXKzggFyYYi3sa1tJoK4ET1QKaz6xmMIoHVDH2fhDiNBap8xQnrx6zoUCVkOVUxyZ6yGSO2FY-R_azj7aTyIpqdEq5QWan6xkZ2YZianvzAJfRGD-exiDIF0TwlD9i0TU2q5LUpI1c0YHydMKXxic0qDilbcmEDOUW8Lx0wVhJeOd62fPm1ajKWumUcxt7ooKGsRuOziYRq6d081XOA3FGFcqjtwVvvlCgs7bSlAbW13gJ5u1ath3nNHBstTHZONlmeylR9Pa6uGr5BhPaWbJS9yPqH6zE8WtUdmH0TnMjReSLAJbk_x-gsxJkk2Y3JwQp6Xc-OoWPVHdhfMTSWshpdXpaIxaGmtoreZQB2EvwgDaSuL6Nl2N4ZbVCVswAMmbnqAO0Fz88g_JDVqMGFCQWe5iVjcr17xd2UV8GIGnKOLSJ-aKHpjrquRvHUJja4DOX0rktrndhqkaWs1bvcqMlVUhRNIT-vCAQk-YR1qQFJLhL9Y35lF42RELOhmO4WMpECvtRNrfa2wqJJuALilLBRuLJz5wVQSuWVJO0bTCTtQRJkUZHrP0z4XHXkUYkRyQpm_T8uORcJ2fhryajCypKZinqAie2SRsoeUSBqEpRwZcC2K__JeKLtFchJb1wMgbHW9DnJNzMsBEShVElttTGutmlXeglTCR3Qr-Gk7goGPdLO9FHtria2Ts08aooghCHwqvf_bZBWmZV04bfwmPk1XoRxGU9XoITQ-RhlcQXZaq6hc3ItS5nNGMOdgPJ2KjmuSoh9peqK1lq5eOo2aPgtFEL7A5EM0lmlTJV7rIR5IeIMMQ0rI-SM0HWQDe150X5-qWO6oR99nYy7GciaRg5dStJATWmKgjb2EQDiDqTcHeSu7yedWD7tQQSNL5gQVTGyoP1FX98QeNCFbH1JGTU6fj1DFrWnYU30F80Uhj6O3TL6mMGdDjLSvmHgAoaEUP24jnPXgZhSSXmwjbugEMWdRngxNW_jPARABWR5JbExMv7Zy54pgwWdAKdFmFZmdkXS-ug1CZYiLuKt9H5WpAA1bOZD_wWEelnhOH0LIIjZSTrwzUlrCwDEXMmIYWEVpWZ6cfeOCQPR_RSzpVgSvq6VnhaU_ZG2PkLirWCmiqjQ#DSD'
+        id: 5,
+        genres: [genres.drama],
+        title: 'Breaking Bad',
+        image: 'https://www.themoviedb.org/t/p/w600_and_h900_bestv2/ggFHVNu6YYI5L9pCfOacjizRGt.jpg',
+        ageLimit: 18,
+        rating: '8.9',
+        year: 2008,
+        description: 'When Walter White, a New Mexico chemistry teacher, is diagnosed with Stage III cancer and given a prognosis of only two years left to live. He becomes filled with a sense of fearlessness and an unrelenting desire to secure his family\'s financial future at any cost as he enters the dangerous world of drugs and crime.'
       },
       {
-        title: 'Футурама',
-        image: 'https://kinopoisk-ru.clstorage.net/1c64DB120/7497c7x4LqQ/zyAXFYjJskEJAhnszNDefmkJzYkDB1WfC9GoKBQ_I95xW4BKc9FEY7K0Tbq5Gw1O8j065g4KcfYcUE4TtidpgFlkgQJMWnCUXpEKbdqHi25uH5qNBVVADgyVf37D9O_UfdHcw_wbTGiq5d2qv0wamCIsLCUfyDanjEzVVuqzs9xJ7BlXgJe7wcbbFaoN0Np8ec-JzVqInR9cUWcl3bIhmLfZkcsxUEzpauoRZCLEHpcsrOzkE8YuZovKFwxn9zfUj6xVVMpROgaBHBEnyhha_HNJQQUex5-cnhosapJ4qNFwnRdL-xOHKCuj22ogDBpZa-PlZhoGqyrEQ9rCKrs8mUSvnVWNV_hAwdwaaMtT3vp-A00BFQNY1pxdISASeOZWcJmSw_bVgyciqpUj4AdZUaXuY-kYDibqCEDZT241Nt8GaRpaQJmxwkQUleINktE4MkDFCVrLmVBQ06jhX7WtVfSbFoN6m4PjraEcYiaEHVPka6Vs2AEsZYHD2YYueLpYzebZ2wUa-oXOF5EvyVsTvLbIiUjcAl6X0VKq6J4wYdR70FuIsxmJ5yRommchSFuTJO3u7VeDoSlLyd7CbrO41wXjkxqO2zsGDtDdZsSUVPpyyEUBlUwdU5SdaqGefWLRtBnXzXnfQSjh5lSv7QpS0KkqJSEVgyEuj46bz6gy91gM6dHdhJn7RoRSVS8Hk9v0fobFjtAHHZxa2avukf_lGDCakYy42YAj6yRebaQE21bv7SXp3o-o602L0Uog9_hZgmAb20JaukyLnN9nxtdefDsGT8pWRtqTWlDsZZn-6d641FCAs1MG4CJjnGWsTF0aIGMm5ldJ5i0AxZkH6DZ73A1tVJGHVnyODhBZ7QId2rb_T4ZBnYecWBBQYCASuixfPRLVAvzaxSRiodompIvZ3SjrJiJdRKlpgorWiin3uNtP7ZkdSB69DEScFK2FnN2-_AqJDhWFXh6bGS-iWrYj2TSZ3gl0XQVs66zZ426OkhbgLmGlUAMnbkHAHoLhfneWiq8VHM5Qe4HFXdIvBdXbuD8KB03YhFXa293prlwwpl88VJUIvF1AIWTtnSzqQ1sQpSwpbpFMraFMDRFN73C8XEljUleKWDQFxxeT5gJV072_CIXO1cZaU1wdK2sTPWzSdthSRf2bRemsbFLmKkIaWeotJOMRjuyvygqbzej2-FzOpBZVARx9Cw2RVKxJWZ06s86HBJLFUl6dXSwol3grGnfc3wF0EIemZCtTqiYFUprhbq9uG09vqEgL2cBn8b4TRKRf1wbaesiBkRxixhsSfH-GR89TQxgTkF-johK_rJawm15LuZGLJ-Ri0uYkgNQRoOCpY1mHb-KKgVPN5zK6G8YmmdnJm78KS50XZgRS3P12BA5Ok8TcVptT6iseMinXsd_QS_hYDSgo4FgiIoad120rK-yfjydnjQFUwGw-OlUOr9NdTFb0yscaG66MF1lxtsoKSVTK0JsUEuQgEjqtXnEd1w213UAs7K0aImqPW1rn6GsmX48gq4vCEksqsXMbzGGc0sEZuk0PGdYvjxKSvT7KyojSA58WHZ4r5pG-oJ72l1-CNdgDrGwmWK4hyh1QaixvKdOCZyhFwpaKZvr0lMPsllAI0DVDTFffbE1Vnfs5iILNEcCWUNMfYa0XMqYXfJISQTqVgaOjYZKnrgSRUmwsra1dAWkmQMOeji4-uVBJLZ0UhtC_CgvUXORNUZQ0f07OzxMFF9YcGGxomvEhV_Fcn8FxmoTqJeQc5O-MFBLpaKuvEklsIY1D04WpdveTSeYSn0ZXNQFHFJPkyR3SMLlDh4SQixgXU1XgIlYzrRh3m5fB9pPIqO1gXKzggFyYYi3sa1tJoK4ET1QKaz6xmMIoHVDH2fhDiNBap8xQnrx6zoUCVkOVUxyZ6yGSO2FY-R_azj7aTyIpqdEq5QWan6xkZ2YZianvzAJfRGD-exiDIF0TwlD9i0TU2q5LUpI1c0YHydMKXxic0qDilbcmEDOUW8Lx0wVhJeOd62fPm1ajKWumUcxt7ooKGsRuOziYRq6d081XOA3FGFcqjtwVvvlCgs7bSlAbW13gJ5u1ath3nNHBstTHZONlmeylR9Pa6uGr5BhPaWbJS9yPqH6zE8WtUdmH0TnMjReSLAJbk_x-gsxJkk2Y3JwQp6Xc-OoWPVHdhfMTSWshpdXpaIxaGmtoreZQB2EvwgDaSuL6Nl2N4ZbVCVswAMmbnqAO0Fz88g_JDVqMGFCQWe5iVjcr17xd2UV8GIGnKOLSJ-aKHpjrquRvHUJja4DOX0rktrndhqkaWs1bvcqMlVUhRNIT-vCAQk-YR1qQFJLhL9Y35lF42RELOhmO4WMpECvtRNrfa2wqJJuALilLBRuLJz5wVQSuWVJO0bTCTtQRJkUZHrP0z4XHXkUYkRyQpm_T8uORcJ2fhryajCypKZinqAie2SRsoeUSBqEpRwZcC2K__JeKLtFchJb1wMgbHW9DnJNzMsBEShVElttTGutmlXeglTCR3Qr-Gk7goGPdLO9FHtria2Ts08aooghCHwqvf_bZBWmZV04bfwmPk1XoRxGU9XoITQ-RhlcQXZaq6hc3ItS5nNGMOdgPJ2KjmuSoh9peqK1lq5eOo2aPgtFEL7A5EM0lmlTJV7rIR5IeIMMQ0rI-SM0HWQDe150X5-qWO6oR99nYy7GciaRg5dStJATWmKgjb2EQDiDqTcHeSu7yedWD7tQQSNL5gQVTGyoP1FX98QeNCFbH1JGTU6fj1DFrWnYU30F80Uhj6O3TL6mMGdDjLSvmHgAoaEUP24jnPXgZhSSXmwjbugEMWdRngxNW_jPARABWR5JbExMv7Zy54pgwWdAKdFmFZmdkXS-ug1CZYiLuKt9H5WpAA1bOZD_wWEelnhOH0LIIjZSTrwzUlrCwDEXMmIYWEVpWZ6cfeOCQPR_RSzpVgSvq6VnhaU_ZG2PkLirWCmiqjQ#DSD'
+        id: 6,
+        genres: [genres.drama],
+        title: 'Breaking Bad',
+        image: 'https://www.themoviedb.org/t/p/w600_and_h900_bestv2/ggFHVNu6YYI5L9pCfOacjizRGt.jpg',
+        ageLimit: 18,
+        rating: '8.9',
+        year: 2008,
+        description: 'When Walter White, a New Mexico chemistry teacher, is diagnosed with Stage III cancer and given a prognosis of only two years left to live. He becomes filled with a sense of fearlessness and an unrelenting desire to secure his family\'s financial future at any cost as he enters the dangerous world of drugs and crime.'
       },
       {
-        title: 'Во все тяжкие',
-        image: 'https://kinopoisk-ru.clstorage.net/1c64DB120/7497c7x4LqQ/zyAXFYjJskEJAhnszNDefmkJzYkDB1WfC9GoKBQ_I95xW4BKc9FEY7K0Tjt42w7Nsimvc45f8XaIkE5GdjJpgE_zQsJMmuSVXpFeORkFS_nsyxgYhpVADgyVf37D9O_UfdHcw_wbTGiq5d2qv0wamCIsLCUfyDanjEzVVuqzs9xJ7BlXgJe7wcbbFaoN0Np8ec-JzVqInR9cUWcl3bIhmLfZkcsxUEzpauoRZCLEHpcsrOzkE8YuZovKFwxn9zfUj6xVVMpROgaBHBEnyhha_HNJQQUex5-cnhosapJ4qNFwnRdL-xOHKCuj22ogDBpZa-PlZhoGqyrEQ9rCKrs8mUSvnVWNV_hAwdwaaMtT3vp-A00BFQNY1pxdISASeOZWcJmSw_bVgyciqpUj4AdZUaXuY-kYDibqCEDZT241Nt8GaRpaQJmxwkQUleINktE4MkDFCVrLmVBQ06jhX7WtVfSbFoN6m4PjraEcYiaEHVPka6Vs2AEsZYHD2YYueLpYzebZ2wUa-oXOF5EvyVsTvLbIiUjcAl6X0VKq6J4wYdR70FuIsxmJ5yRommchSFuTJO3u7VeDoSlLyd7CbrO41wXjkxqO2zsGDtDdZsSUVPpyyEUBlUwdU5SdaqGefWLRtBnXzXnfQSjh5lSv7QpS0KkqJSEVgyEuj46bz6gy91gM6dHdhJn7RoRSVS8Hk9v0fobFjtAHHZxa2avukf_lGDCakYy42YAj6yRebaQE21bv7SXp3o-o602L0Uog9_hZgmAb20JaukyLnN9nxtdefDsGT8pWRtqTWlDsZZn-6d641FCAs1MG4CJjnGWsTF0aIGMm5ldJ5i0AxZkH6DZ73A1tVJGHVnyODhBZ7QId2rb_T4ZBnYecWBBQYCASuixfPRLVAvzaxSRiodompIvZ3SjrJiJdRKlpgorWiin3uNtP7ZkdSB69DEScFK2FnN2-_AqJDhWFXh6bGS-iWrYj2TSZ3gl0XQVs66zZ426OkhbgLmGlUAMnbkHAHoLhfneWiq8VHM5Qe4HFXdIvBdXbuD8KB03YhFXa293prlwwpl88VJUIvF1AIWTtnSzqQ1sQpSwpbpFMraFMDRFN73C8XEljUleKWDQFxxeT5gJV072_CIXO1cZaU1wdK2sTPWzSdthSRf2bRemsbFLmKkIaWeotJOMRjuyvygqbzej2-FzOpBZVARx9Cw2RVKxJWZ06s86HBJLFUl6dXSwol3grGnfc3wF0EIemZCtTqiYFUprhbq9uG09vqEgL2cBn8b4TRKRf1wbaesiBkRxixhsSfH-GR89TQxgTkF-johK_rJawm15LuZGLJ-Ri0uYkgNQRoOCpY1mHb-KKgVPN5zK6G8YmmdnJm78KS50XZgRS3P12BA5Ok8TcVptT6iseMinXsd_QS_hYDSgo4FgiIoad120rK-yfjydnjQFUwGw-OlUOr9NdTFb0yscaG66MF1lxtsoKSVTK0JsUEuQgEjqtXnEd1w213UAs7K0aImqPW1rn6GsmX48gq4vCEksqsXMbzGGc0sEZuk0PGdYvjxKSvT7KyojSA58WHZ4r5pG-oJ72l1-CNdgDrGwmWK4hyh1QaixvKdOCZyhFwpaKZvr0lMPsllAI0DVDTFffbE1Vnfs5iILNEcCWUNMfYa0XMqYXfJISQTqVgaOjYZKnrgSRUmwsra1dAWkmQMOeji4-uVBJLZ0UhtC_CgvUXORNUZQ0f07OzxMFF9YcGGxomvEhV_Fcn8FxmoTqJeQc5O-MFBLpaKuvEklsIY1D04WpdveTSeYSn0ZXNQFHFJPkyR3SMLlDh4SQixgXU1XgIlYzrRh3m5fB9pPIqO1gXKzggFyYYi3sa1tJoK4ET1QKaz6xmMIoHVDH2fhDiNBap8xQnrx6zoUCVkOVUxyZ6yGSO2FY-R_azj7aTyIpqdEq5QWan6xkZ2YZianvzAJfRGD-exiDIF0TwlD9i0TU2q5LUpI1c0YHydMKXxic0qDilbcmEDOUW8Lx0wVhJeOd62fPm1ajKWumUcxt7ooKGsRuOziYRq6d081XOA3FGFcqjtwVvvlCgs7bSlAbW13gJ5u1ath3nNHBstTHZONlmeylR9Pa6uGr5BhPaWbJS9yPqH6zE8WtUdmH0TnMjReSLAJbk_x-gsxJkk2Y3JwQp6Xc-OoWPVHdhfMTSWshpdXpaIxaGmtoreZQB2EvwgDaSuL6Nl2N4ZbVCVswAMmbnqAO0Fz88g_JDVqMGFCQWe5iVjcr17xd2UV8GIGnKOLSJ-aKHpjrquRvHUJja4DOX0rktrndhqkaWs1bvcqMlVUhRNIT-vCAQk-YR1qQFJLhL9Y35lF42RELOhmO4WMpECvtRNrfa2wqJJuALilLBRuLJz5wVQSuWVJO0bTCTtQRJkUZHrP0z4XHXkUYkRyQpm_T8uORcJ2fhryajCypKZinqAie2SRsoeUSBqEpRwZcC2K__JeKLtFchJb1wMgbHW9DnJNzMsBEShVElttTGutmlXeglTCR3Qr-Gk7goGPdLO9FHtria2Ts08aooghCHwqvf_bZBWmZV04bfwmPk1XoRxGU9XoITQ-RhlcQXZaq6hc3ItS5nNGMOdgPJ2KjmuSoh9peqK1lq5eOo2aPgtFEL7A5EM0lmlTJV7rIR5IeIMMQ0rI-SM0HWQDe150X5-qWO6oR99nYy7GciaRg5dStJATWmKgjb2EQDiDqTcHeSu7yedWD7tQQSNL5gQVTGyoP1FX98QeNCFbH1JGTU6fj1DFrWnYU30F80Uhj6O3TL6mMGdDjLSvmHgAoaEUP24jnPXgZhSSXmwjbugEMWdRngxNW_jPARABWR5JbExMv7Zy54pgwWdAKdFmFZmdkXS-ug1CZYiLuKt9H5WpAA1bOZD_wWEelnhOH0LIIjZSTrwzUlrCwDEXMmIYWEVpWZ6cfeOCQPR_RSzpVgSvq6VnhaU_ZG2PkLirWCmiqjQ#DSD'
+        id: 7,
+        genres: [genres.drama],
+        title: 'Breaking Bad',
+        image: 'https://www.themoviedb.org/t/p/w600_and_h900_bestv2/ggFHVNu6YYI5L9pCfOacjizRGt.jpg',
+        ageLimit: 18,
+        rating: '8.9',
+        year: 2008,
+        description: 'When Walter White, a New Mexico chemistry teacher, is diagnosed with Stage III cancer and given a prognosis of only two years left to live. He becomes filled with a sense of fearlessness and an unrelenting desire to secure his family\'s financial future at any cost as he enters the dangerous world of drugs and crime.'
       },
     ],
-    actors: [
-      {
-        name: 'Том Харди',
-        image: 'https://upload.wikimedia.org/wikipedia/commons/4/43/Tom_Hardy_by_Gage_Skidmore.jpg'
-      },
-      {
-        name: 'Том Круз',
-        image: 'https://www.film.ru/sites/default/files/styles/thumb_260x320/public/people/1457226-827313.jpg'
-      },
-      {
-        name: 'Том Харди',
-        image: 'https://upload.wikimedia.org/wikipedia/commons/4/43/Tom_Hardy_by_Gage_Skidmore.jpg'
-      },
-      {
-        name: 'Том Круз',
-        image: 'https://www.film.ru/sites/default/files/styles/thumb_260x320/public/people/1457226-827313.jpg'
-      },
-      {
-        name: 'Том Харди',
-        image: 'https://upload.wikimedia.org/wikipedia/commons/4/43/Tom_Hardy_by_Gage_Skidmore.jpg'
-      },
-      {
-        name: 'Том Круз',
-        image: 'https://www.film.ru/sites/default/files/styles/thumb_260x320/public/people/1457226-827313.jpg'
-      },
-      {
-        name: 'Том Харди',
-        image: 'https://upload.wikimedia.org/wikipedia/commons/4/43/Tom_Hardy_by_Gage_Skidmore.jpg'
-      },
-    ]
-  }
+  },
+  actors: [
+    {
+      id: 1,
+      title: 'Том Харди',
+      description: 'good boy',
+      image: 'https://upload.wikimedia.org/wikipedia/commons/4/43/Tom_Hardy_by_Gage_Skidmore.jpg'
+    },
+    {
+      id: 2,
+      title: 'Том Круз',
+      description: 'good boy',
+      image: 'https://www.film.ru/sites/default/files/styles/thumb_260x320/public/people/1457226-827313.jpg'
+    },
+    {
+      id: 3,
+      title: 'Том Харди',
+      description: 'good boy',
+      image: 'https://upload.wikimedia.org/wikipedia/commons/4/43/Tom_Hardy_by_Gage_Skidmore.jpg'
+    },
+    {
+      id: 4,
+      title: 'Том Круз',
+      description: 'good boy',
+      image: 'https://www.film.ru/sites/default/files/styles/thumb_260x320/public/people/1457226-827313.jpg'
+    },
+    {
+      id: 5,
+      title: 'Том Харди',
+      description: 'good boy',
+      image: 'https://upload.wikimedia.org/wikipedia/commons/4/43/Tom_Hardy_by_Gage_Skidmore.jpg'
+    },
+    {
+      id: 6,
+      title: 'Том Круз',
+      description: 'good boy',
+      image: 'https://www.film.ru/sites/default/files/styles/thumb_260x320/public/people/1457226-827313.jpg'
+    },
+    {
+      id: 7,
+      title: 'Том Харди',
+      description: 'good boy',
+      image: 'https://upload.wikimedia.org/wikipedia/commons/4/43/Tom_Hardy_by_Gage_Skidmore.jpg'
+    },
+  ],
+  searchArray: [],
 })
 
+export const getters = {
+  getTvShows(state) {
+    return state.library.tv
+  },
+  getMovies(state) {
+    return state.library.movies
+  },
+  getSeries(state) {
+    return state.library.series
+  },
+  getFromId: state => payload => {
+    return state.library[payload.place].find(item => item.id === +payload.id)
+  },
+  getActors(state) {
+    return state.actors
+  },
+  getActor: state => id => {
+    return state.actors.find(item => item.id === id)
+  },
+  getAllButOne: state => ({place, id, actor}) => {
+    let arr = []
+    if (actor) {
+      arr = [...state.actors]
+    } else {
+      arr = [...state.library[place]]
+    }
+    const idx = arr.findIndex(it => it.id === id)
+
+    arr.splice(idx, 1)
+
+    return arr
+  },
+  getByGenre: state => genre => {
+    const toReturn = []
+    Object.keys(state.library).forEach(key => {
+      state.library[key].forEach(item => {
+        item.genres.includes(genre) ? toReturn.push({...item, place: key}) : null
+      })
+    })
+    return toReturn
+  }
+}
+
 export const mutations = {
+  pushInSearch(state, item) {
+    state.searchArray.push(item)
+  },
+  clearSearch(state) {
+    state.searchArray = []
+  }
 }
 
 export const actions = {
+  search({state, commit}, searchText) {
+    commit('clearSearch')
+
+    if (searchText === '') {
+      return
+    }
+
+    Object.keys(state.library).forEach(key => {
+      state.library[key]
+        // .forEach(item => item.title.includes(searchText) ? searchArray.push(item) : null)
+        .forEach(item => {
+          if (item.title.toLowerCase().includes(searchText.toLowerCase())) {
+            commit('pushInSearch', {
+              ...item,
+              place: key
+            })
+          }
+        })
+    })
+  }
 }

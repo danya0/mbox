@@ -1,11 +1,11 @@
 <template>
   <div class="container">
     <div class="actors">
-      <app-component-link-title>
+      <app-component-link-title @link-click="$router.push('/actors')">
         Popular Actors & Directors
       </app-component-link-title>
       <app-carousel>
-        <app-actor v-for="act of library.actors" :key="act.name" :name="act.name" :link="act.name" :image="act.image"/>
+        <app-actor v-for="act of actors" :key="act.name" :name="act.name" :link="act.id" :image="act.image"/>
       </app-carousel>
     </div>
   </div>
@@ -18,7 +18,7 @@ import AppActor from "~/components/Actors/AppActor";
 import {mapState} from "vuex";
 export default {
   components: {AppActor, AppComponentLinkTitle, AppCarousel},
-  computed: {...mapState('library', ['library'])}
+  computed: {...mapState('library', ['actors'])}
 }
 </script>
 
