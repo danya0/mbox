@@ -3,27 +3,25 @@
     <div class="container">
       <div class="main">
         <div class="main-block">
-          <div class="main__title">Night Watch</div>
+          <div class="main__title">{{ item.title }}</div>
         </div>
         <div class="main-block">
           <the-main-information
-            year="2021"
-            age-limit="18"
-            rating="8"
-            type="Serial"
+            :year="item.year"
+            :age-limit="item.ageLimit"
+            :rating="item.rating"
+            type="Movie"
           />
         </div>
         <div class="main-block">
           <div class="main__description">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Nunc quis et elit lacinia urna.Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit.
+            {{ croppedDescription }}
           </div>
         </div>
         <div class="main-block">
           <div class="main-buttons">
-            <app-button with-play>Watch</app-button>
-            <app-button white>More info</app-button>
+            <app-button with-play @click="openTrailerWithVideo(item.trailerVideo)">Watch</app-button>
+            <app-button white @click="$router.push(`${place}/${id}`)">More info</app-button>
           </div>
         </div>
       </div>
@@ -34,9 +32,31 @@
 <script>
 import TheMainInformation from "~/components/Main/TheMainInformation";
 import AppButton from "~/components/AppButton";
+import {mapActions, mapGetters} from "vuex";
 
 export default {
-  components: {AppButton, TheMainInformation}
+  data() {
+    return {
+      place: 'movies',
+      id: 4,
+      item: {},
+      croppedDescription: ''
+    }
+  },
+  async fetch() {
+    this.item = await this.getFromId({id: this.id, place: this.place})
+    this.croppedDescription = this.cropFunction(this.item.description, 220)
+  },
+  computed: {
+    ...mapGetters('library', ['getFromId']),
+  },
+  methods: {
+    ...mapActions('trailer', ['openTrailerWithVideo']),
+    cropFunction(text, stop) {
+      return text.slice(0, stop) + (stop < text.length ? '...' : '')
+    }
+  },
+  components: {AppButton, TheMainInformation},
 }
 </script>
 
@@ -46,13 +66,22 @@ export default {
 .main {
   margin-bottom: 70px;
   &-section {
-    background-image: url('~assets/img/main-bg.png');
+    background-image: url('~assets/img/bg.jpg');
+    position: relative;
     background-size: cover;
-    background-position: center center;
+    background-position: 500px center;
     background-repeat: no-repeat;
 
+    @include grid-laptop {
+      background-position: 200px center;
+    }
+
+    @include grid-tablet {
+      background-position: 100px center;
+    }
+
     @include grid-mobile {
-      background-position: right -310px center;
+      background-position: right -330px center;
     }
   }
 

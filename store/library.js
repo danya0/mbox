@@ -336,8 +336,8 @@ export const getters = {
   getSeries(state) {
     return state.library.series
   },
-  getFromId: state => payload => {
-    return state.library[payload.place].find(item => item.id === +payload.id)
+  getFromId: state => ({place, id}) => {
+    return state.library[place].find(item => item.id === +id)
   },
   getActors(state) {
     return state.actors
