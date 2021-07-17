@@ -71,7 +71,7 @@ export default {
   }
 
   &__description {
-    font-size: 28px;
+    font-size: 18px;
     color: darken(#FFFFFF, 30%);
   }
 

@@ -2,10 +2,10 @@
   <div class="container">
     <div class="trending">
       <app-trending-panel
-        linkText="Trending TV Shows"
-        :objects-array="library.tv"
-        :place="Object.keys(library)[0]"
-        @link-click="$router.push(`/${Object.keys(library)[0]}`)"
+        linkText="Trending Series"
+        :objects-array="library.series"
+        :place="Object.keys(library)[2]"
+        @link-click="$router.push(`/${Object.keys(library)[2]}`)"
       />
       <app-trending-panel
         linkText="Trending Movies"
@@ -17,10 +17,10 @@
       <app-trending-panel
         class="m0"
         v-else
-        linkText="Trending Series"
-        :objects-array="library.series"
-        :place="Object.keys(library)[2]"
-        @link-click="$router.push(`/${Object.keys(library)[2]}`)"
+        linkText="Trending Tv Shows"
+        :objects-array="library.tv"
+        :place="Object.keys(library)[0]"
+        @link-click="$router.push(`/${Object.keys(library)[0]}`)"
       />
     </div>
   </div>

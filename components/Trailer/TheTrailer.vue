@@ -61,7 +61,7 @@ export default {
     transition: color .3s;
 
     &:hover {
-      color: darken($text-color, 50%)
+      color: darken($text-color, 70%)
     }
   }
 }
