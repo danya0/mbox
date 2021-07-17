@@ -105,6 +105,7 @@ export default {
   display: flex;
   justify-content: space-between;
   padding: 70px 0;
+  margin-top: 50px;
 
   @include grid-tablet {
     justify-content: center;

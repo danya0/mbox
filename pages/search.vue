@@ -74,7 +74,8 @@ export default {
       height: 60px;
       font-size: 21px;
       padding: 0 10px;
-      outline: navajowhite;
+      border-radius: 14px;
+      outline: none;
     }
   }
 
