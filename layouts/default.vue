@@ -5,12 +5,14 @@
     <div class="content" :class="{'with-burger-menu': burgerMenu}">
       <Nuxt/>
     </div>
+    <the-footer class="footer-transition" :class="{'with-burger-menu': burgerMenu}"/>
   </div>
 </template>
 
 <script>
 import TheHeader from "~/components/Header/TheHeader";
 import TheBurgerMenu from "~/components/Burger/TheBurgerMenu";
+import TheFooter from "~/components/Footer/TheFooter";
 import {mapState} from "vuex"
 
 export default {
@@ -29,7 +31,7 @@ export default {
   computed: {
     ...mapState({burgerMenu: 'burgerMenu'})
   },
-  components: {TheBurgerMenu, TheHeader}
+  components: {TheBurgerMenu, TheHeader, TheFooter}
 }
 </script>
 
@@ -54,6 +56,10 @@ html {
   }
 }
 
+.content {
+  min-height: 65vh;
+}
+
 .with-header {
   padding-top: 100px;
 }
@@ -74,14 +80,12 @@ a {
 }
 
 @include grid-tablet {
-  .content {
+  .content, .footer-transition {
     transition: transform $burger-show-transition;
-    &.with-burger-menu {
-      transform: translateY($burger-menu-height);
-    }
+  }
+  .with-burger-menu {
+    transform: translateY($burger-menu-height);
   }
 }
-
-
 
 </style>

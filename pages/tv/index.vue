@@ -1,7 +1,7 @@
 <template>
   <div class="page with-header">
     <div class="container">
-      <app-cards-place place="series" :card-array="getSeries"/>
+      <app-cards-place place="tv" :card-array="getTvShows"/>
     </div>
   </div>
 </template>
@@ -12,7 +12,7 @@ import {mapGetters} from "vuex";
 
 export default {
   computed: {
-    ...mapGetters('library', ['getSeries'])
+    ...mapGetters('library', ['getTvShows'])
   },
   components: {AppCardsPlace}
 }
