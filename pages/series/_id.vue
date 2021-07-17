@@ -28,11 +28,10 @@
 import {mapGetters} from "vuex";
 import CardPage from "~/components/CardPage/CardPage";
 import AppTrendingPanel from "~/components/Trending/AppTrendingPanel";
-import TheFooter from "~/components/Footer/TheFooter";
 import {toUpperFirst} from "~/utils/toUpperFirst";
 
 export default {
-  components: {AppTrendingPanel, CardPage, TheFooter},
+  components: {AppTrendingPanel, CardPage},
   data() {
     return {
       item: {},
