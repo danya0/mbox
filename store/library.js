@@ -222,37 +222,44 @@ export const state = () => ({
   actors: [
     {
       id: 1,
-      name: 'Том Харди',
+      title: 'Том Харди',
+      description: 'good boy',
       image: 'https://upload.wikimedia.org/wikipedia/commons/4/43/Tom_Hardy_by_Gage_Skidmore.jpg'
     },
     {
       id: 2,
-      name: 'Том Круз',
+      title: 'Том Круз',
+      description: 'good boy',
       image: 'https://www.film.ru/sites/default/files/styles/thumb_260x320/public/people/1457226-827313.jpg'
     },
     {
       id: 3,
-      name: 'Том Харди',
+      title: 'Том Харди',
+      description: 'good boy',
       image: 'https://upload.wikimedia.org/wikipedia/commons/4/43/Tom_Hardy_by_Gage_Skidmore.jpg'
     },
     {
       id: 4,
-      name: 'Том Круз',
+      title: 'Том Круз',
+      description: 'good boy',
       image: 'https://www.film.ru/sites/default/files/styles/thumb_260x320/public/people/1457226-827313.jpg'
     },
     {
       id: 5,
-      name: 'Том Харди',
+      title: 'Том Харди',
+      description: 'good boy',
       image: 'https://upload.wikimedia.org/wikipedia/commons/4/43/Tom_Hardy_by_Gage_Skidmore.jpg'
     },
     {
       id: 6,
-      name: 'Том Круз',
+      title: 'Том Круз',
+      description: 'good boy',
       image: 'https://www.film.ru/sites/default/files/styles/thumb_260x320/public/people/1457226-827313.jpg'
     },
     {
       id: 7,
-      name: 'Том Харди',
+      title: 'Том Харди',
+      description: 'good boy',
       image: 'https://upload.wikimedia.org/wikipedia/commons/4/43/Tom_Hardy_by_Gage_Skidmore.jpg'
     },
   ],
@@ -272,8 +279,19 @@ export const getters = {
   getFromId: state => payload => {
     return state.library[payload.place].find(item => item.id === +payload.id)
   },
-  getAllButOne: state => ({place, id}) => {
-    const arr = [...state.library[place]]
+  getActors(state) {
+    return state.actors
+  },
+  getActor: state => id => {
+    return state.actors.find(item => item.id === id)
+  },
+  getAllButOne: state => ({place, id, actor}) => {
+    let arr = []
+    if (actor) {
+      arr = [...state.actors]
+    } else {
+      arr = [...state.library[place]]
+    }
     const idx = arr.findIndex(it => it.id === id)
 
     arr.splice(idx, 1)

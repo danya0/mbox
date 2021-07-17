@@ -1,5 +1,5 @@
 <template>
-  <div class="actor" @click="$router.push(`/actor/${link}`)">
+  <div class="actor" @click="$router.push(`/actors/${link}`)">
     <div class="actor__img" :style="{backgroundImage: imgUlr}"></div>
     <div class="actor__name">{{ name }}</div>
   </div>

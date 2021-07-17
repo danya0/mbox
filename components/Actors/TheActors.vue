@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <div class="actors">
-      <app-component-link-title>
+      <app-component-link-title @link-click="$router.push('/actors')">
         Popular Actors & Directors
       </app-component-link-title>
       <app-carousel>
