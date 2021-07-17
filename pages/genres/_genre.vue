@@ -1,5 +1,4 @@
 <template>
-
   <div class="page with-header">
     <div class="container">
       <div v-if="isExist && arr.length">
