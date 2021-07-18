@@ -61,7 +61,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
 
 .main {
   margin-bottom: 70px;
