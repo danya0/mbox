@@ -16,6 +16,11 @@ export default {
     ]
   },
 
+  target: 'static',
+  router: {
+    base: '/mbox/'
+  },
+
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
   ],
