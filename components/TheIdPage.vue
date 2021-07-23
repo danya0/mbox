@@ -3,14 +3,8 @@
     <div class="container">
       <div v-if="item">
         <card-page
-          :title="item.title"
-          :image="item.image"
-          :type="toUpperFirst(place)"
-          :age-limit="item.ageLimit"
-          :rating="item.rating"
-          :year="item.year"
-          :descr="item.description"
-          :trailer-video="item.trailerVideo"
+          :item="item"
+          :place="place"
           class="mb"
         />
         <app-trending-panel
@@ -31,10 +25,14 @@ import {toUpperFirst} from "~/utils/toUpperFirst";
 import {mapGetters} from "vuex";
 export default {
   components: {AppTrendingPanel, CardPage},
+  async fetch() {
+    this.item = await this.getFromId({id: this.id, place: this.place})
+    this.upperPlace = await toUpperFirst(this.place)
+  },
   data() {
     return {
       item: {},
-      toUpperFirst
+      upperPlace: ''
     }
   },
   computed: {
@@ -48,9 +46,6 @@ export default {
       return `Watch other ${toUpperFirst(this.place)}`
     },
     ...mapGetters('library', ['getFromId', 'getAllButOne']),
-  },
-  mounted() {
-    this.item = this.getFromId({id: this.id, place: this.place})
   }
 }
 </script>

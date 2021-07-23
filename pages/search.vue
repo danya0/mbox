@@ -3,7 +3,7 @@
     <div class="container">
       <div class="search">
         <div class="search-box">
-          <input placeholder="Search..." type="text" v-model="searchVal">
+          <input placeholder="Search..." type="text" v-model="searchVal" autofocus>
         </div>
         <div class="search-panel">
           <div class="search__text" v-if="!searchArray.length">
