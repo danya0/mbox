@@ -1,3 +1,5 @@
+const base = '/mbox/'
+
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
@@ -12,13 +14,15 @@ export default {
       { name: 'format-detection', content: 'telephone=no' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/mbox/favicon.ico' },
+      { rel: 'icon', type: 'image/x-icon', href: `${base}/favicon.ico` },
     ]
   },
 
+
   target: 'static',
+  fallback: true,
   router: {
-    base: '/mbox/'
+    base
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
