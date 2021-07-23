@@ -2,6 +2,15 @@ import {state} from './store/library'
 
 const base = '/mbox/'
 
+function mapRoutes(array, name) {
+  return array.map(item => {
+    return {
+      route: `/${name}/` + item.id,
+      payload: item
+    }
+  })
+}
+
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
@@ -28,14 +37,12 @@ export default {
 
   generate: {
     routes() {
-      let tvs = state().library.tv.map(item => {
-        return {
-          route: '/tv/' + item.id,
-          payload: item
-        }
-      })
-
-      return [...tvs]
+      return [
+        ...mapRoutes(state().library.tv, 'tv'),
+        ...mapRoutes(state().library.series, 'series'),
+        ...mapRoutes(state().library.movies, 'movies'),
+        ...mapRoutes(state().actors, 'actors'),
+      ]
     }
   },
 
