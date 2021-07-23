@@ -20,9 +20,9 @@ export default {
 
 
   target: 'static',
-  fallback: true,
   router: {
-    base
+    base,
+    mode: 'hash'
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
