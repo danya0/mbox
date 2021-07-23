@@ -1,4 +1,4 @@
-import genres from "~/constants/genres";
+import genres from "../constants/genres";
 
 export const state = () => ({
   library: {

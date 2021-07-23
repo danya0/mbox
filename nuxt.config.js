@@ -1,3 +1,5 @@
+import {state} from './store/library'
+
 const base = '/mbox/'
 
 export default {
@@ -22,7 +24,19 @@ export default {
   target: 'static',
   router: {
     base,
-    mode: 'hash'
+  },
+
+  generate: {
+    routes() {
+      let tvs = state().library.tv.map(item => {
+        return {
+          route: '/tv/' + item.id,
+          payload: item
+        }
+      })
+
+      return [...tvs]
+    }
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
