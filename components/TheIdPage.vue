@@ -27,12 +27,10 @@ export default {
   components: {AppTrendingPanel, CardPage},
   async fetch() {
     this.item = await this.getFromId({id: this.id, place: this.place})
-    this.upperPlace = await toUpperFirst(this.place)
   },
   data() {
     return {
       item: {},
-      upperPlace: ''
     }
   },
   computed: {
