@@ -1,6 +1,7 @@
 {
   "name": "mbox-vue",
   "version": "1.0.0",
+  "homepage": "https://danya0.github.io/mbox/",
   "private": true,
   "scripts": {
     "dev": "nuxt",
