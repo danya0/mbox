@@ -18,7 +18,7 @@ export default {
   },
   data() {
     return {
-      newImage: `url("${this.image}")`
+      newImage: `url("${this.image}")`,
     }
   }
 }
