@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/actors/6", {data:[{}],fetch:{},mutations:[]});

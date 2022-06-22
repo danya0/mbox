@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/genres/comedy", {data:[{}],fetch:{},mutations:[]});
